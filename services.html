@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services | ASI - Comprehensive Technology Solutions</title>
+  <meta name="description" content="Comprehensive IT services including consultancy, cloud solutions, cybersecurity, data analytics, and digital transformation.">
+  
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- External Libraries -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+  
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+  
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="assets/css/main.css">
+  
+  <!-- Tailwind Configuration -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#4263EB',
+            secondary: '#1E293B',
+            accent: '#06B6D4',
+            background: 'var(--bg-primary)',
+            foreground: 'var(--text-primary)',
+            card: 'var(--bg-secondary)',
+            border: 'var(--border-color)',
+            muted: 'var(--text-secondary)'
+          },
+          fontFamily: {
+            'sans': ['Inter', 'system-ui', 'sans-serif'],
+            'display': ['Pacifico', 'cursive']
+          },
+          borderRadius: {
+            'none': '0px',
+            'sm': '4px',
+            DEFAULT: '8px',
+            'md': '12px',
+            'lg': '16px',
+            'xl': '20px',
+            '2xl': '24px',
+            '3xl': '32px',
+            'full': '9999px',
+            'button': '8px'
+          },
+          keyframes: {
+            'float': {
+              '0%, 100%': { transform: 'translateY(0px)' },
+              '50%': { transform: 'translateY(-20px)' }
+            },
+            'pulse-slow': {
+              '0%, 100%': { opacity: '1' },
+              '50%': { opacity: '0.5' }
+            },
+            'slide-up': {
+              '0%': { transform: 'translateY(100%)', opacity: '0' },
+              '100%': { transform: 'translateY(0)', opacity: '1' }
+            }
+          },
+          animation: {
+            'float': 'float 6s ease-in-out infinite',
+            'pulse-slow': 'pulse-slow 4s ease-in-out infinite',
+            'slide-up': 'slide-up 0.5s ease-out'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="font-sans">
+    <!-- Enhanced Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border transition-all duration-300" id="header">
+        <!-- Top Bar with Contact Info -->
+        <div class="bg-primary text-white py-2 text-sm">
+            <div class="container mx-auto px-4 flex justify-between items-center">
+                <div class="flex items-center space-x-6">
+                    <a href="mailto:info@asi.com.ng" class="flex items-center space-x-2 hover:text-accent transition-colors">
+                        <i class="ri-mail-line"></i>
+                        <span>info@asi.com.ng</span>
+                    </a>
+                    <a href="tel:+2349078678189" class="flex items-center space-x-2 hover:text-accent transition-colors">
+                        <i class="ri-phone-line"></i>
+                        <span>+234 907 867 8189</span>
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="#" class="hover:text-accent transition-colors"><i class="ri-linkedin-fill"></i></a>
+                    <a href="#" class="hover:text-accent transition-colors"><i class="ri-twitter-fill"></i></a>
+                    <a href="#" class="hover:text-accent transition-colors"><i class="ri-facebook-fill"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Main Navigation -->
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <img src="assets/images/asi-logo.png" alt="ASI Logo" class="h-12 w-auto">
+                    <div class="hidden sm:block">
+                        <div class="text-xl font-bold text-foreground mb-2">ASI</div>
+                        <div class="text-xs text-muted">Advanced Systems Infrastructure</div>
+                    </div>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <nav class="hidden lg:flex items-center space-x-8">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <div class="relative group">
+                        <a href="services.html" class="nav-link active flex items-center">
+                            Services
+                            <i class="ri-arrow-down-s-line ml-1 transition-transform group-hover:rotate-180"></i>
+                        </a>
+                        <div class="absolute top-full left-0 w-64 bg-background border border-border rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 mt-2">
+                            <div class="p-4 space-y-2">
+                                <a href="it-consultancy.html" class="block px-4 py-2 rounded-lg hover:bg-card transition-colors">IT Consultancy</a>
+                                <a href="cloud-services.html" class="block px-4 py-2 rounded-lg hover:bg-card transition-colors">Cloud Services</a>
+                                <a href="cybersecurity.html" class="block px-4 py-2 rounded-lg hover:bg-card transition-colors">Cybersecurity</a>
+                                <a href="software-development.html" class="block px-4 py-2 rounded-lg hover:bg-card transition-colors">Software Development</a>
+                                <a href="digital-transformation.html" class="block px-4 py-2 rounded-lg hover:bg-card transition-colors">Digital Transformation</a>
+                                <a href="data-analytics.html" class="block px-4 py-2 rounded-lg hover:bg-card transition-colors">Data Analytics</a>
+                                <a href="business-strategy.html" class="block px-4 py-2 rounded-lg hover:bg-card transition-colors">Business Strategy</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="industries-we-serve.html" class="nav-link">Industries</a>
+                    <a href="case-studies.html" class="nav-link">Case Studies</a>
+                    <a href="news-insights.html" class="nav-link">News & Insights</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </nav>
+                
+                <!-- Desktop Theme Toggle & CTA -->
+                <div class="hidden lg:flex items-center space-x-4">
+                    <button id="theme-toggle" class="p-2 rounded-lg hover:bg-card transition-colors">
+                        <i class="ri-moon-line text-xl"></i>
+                    </button>
+                    <a href="contact.html" class="btn-primary px-6 py-2 rounded-lg font-medium transition-all hover:scale-105">
+                        Get Started
+                    </a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <div class="lg:hidden flex items-center space-x-3">
+                    <button id="mobile-theme-toggle" class="p-2 rounded-lg hover:bg-card transition-colors">
+                        <i class="ri-moon-line text-xl"></i>
+                    </button>
+                    <button id="mobile-menu-toggle" class="p-2 rounded-lg hover:bg-card transition-colors">
+                        <div class="hamburger-icon">
+                            <span class="hamburger-line"></span>
+                            <span class="hamburger-line"></span>
+                            <span class="hamburger-line"></span>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Enhanced Mobile Menu -->
+        <div id="mobile-menu" class="lg:hidden fixed inset-0 bg-background/95 backdrop-blur-md z-40 opacity-0 invisible transition-all duration-300">
+            <nav class="flex flex-col h-full">
+                <div class="flex items-center justify-between p-4 border-b border-border">
+                    <div class="flex items-center space-x-3">
+                        <img src="assets/images/asi-logo.png" alt="ASI Logo" class="h-10 w-auto">
+                        <div class="text-lg font-display font-bold">ASI</div>
+                    </div>
+                    <button id="mobile-menu-close" class="p-2 rounded-lg hover:bg-card transition-colors">
+                        <i class="ri-close-line text-xl"></i>
+                    </button>
+                </div>
+                
+                <ul class="flex-1 px-4 py-6 space-y-2 overflow-y-auto">
+                    <li><a href="index.html" class="block py-3 text-lg font-medium hover:text-accent transition-colors">Home</a></li>
+                    <li><a href="about.html" class="block py-3 text-lg font-medium hover:text-accent transition-colors">About</a></li>
+                    <li class="mobile-dropdown">
+                        <button class="mobile-dropdown-toggle w-full flex items-center justify-between py-3 text-lg font-medium text-primary border-l-2 border-primary pl-4">
+                            Services
+                            <i class="ri-arrow-down-s-line transition-transform"></i>
+                        </button>
+                        <div class="mobile-dropdown-content max-h-0 overflow-hidden transition-all duration-300">
+                            <ul class="pl-4 space-y-2 mt-2">
+                                <li><a href="it-consultancy.html" class="block py-2 hover:text-accent transition-colors">IT Consultancy</a></li>
+                                <li><a href="cloud-services.html" class="block py-2 hover:text-accent transition-colors">Cloud Services</a></li>
+                                <li><a href="cybersecurity.html" class="block py-2 hover:text-accent transition-colors">Cybersecurity</a></li>
+                                <li><a href="software-development.html" class="block py-2 hover:text-accent transition-colors">Software Development</a></li>
+                                <li><a href="digital-transformation.html" class="block py-2 hover:text-accent transition-colors">Digital Transformation</a></li>
+                                <li><a href="data-analytics.html" class="block py-2 hover:text-accent transition-colors">Data Analytics</a></li>
+                                <li><a href="business-strategy.html" class="block py-2 hover:text-accent transition-colors">Business Strategy</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="industries-we-serve.html" class="block py-3 text-lg font-medium hover:text-accent transition-colors">Industries</a></li>
+                    <li><a href="case-studies.html" class="block py-3 text-lg font-medium hover:text-accent transition-colors">Case Studies</a></li>
+                    <li><a href="news-insights.html" class="block py-3 text-lg font-medium hover:text-accent transition-colors">News & Insights</a></li>
+                    <li><a href="contact.html" class="block py-3 text-lg font-medium hover:text-accent transition-colors">Contact</a></li>
+                </ul>
+                
+                <!-- Mobile Contact Info -->
+                <div class="p-4 border-t border-border">
+                    <div class="space-y-3 mb-4">
+                        <a href="mailto:info@asi.com.ng" class="flex items-center space-x-3 hover:text-accent transition-colors">
+                            <i class="ri-mail-line"></i>
+                            <span>info@asi.com.ng</span>
+                        </a>
+                        <a href="tel:+2349078678189" class="flex items-center space-x-3 hover:text-accent transition-colors">
+                            <i class="ri-phone-line"></i>
+                            <span>+234 907 867 8189</span>
+                        </a>
+                    </div>
+                    <a href="contact.html" class="btn-primary w-full text-center py-3 rounded-lg font-medium">
+                        Get Started
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="pt-32">
+        <!-- Hero Section -->
+        <section class="relative py-20 bg-gradient-to-br from-primary/10 via-background to-accent/5 overflow-hidden">
+            <!-- Background Elements -->
+            <div class="absolute top-20 left-10 w-20 h-20 bg-accent/20 rounded-full animate-float"></div>
+            <div class="absolute top-40 right-20 w-32 h-32 bg-primary/20 rounded-full animate-float" style="animation-delay: -2s;"></div>
+            <div class="absolute bottom-20 left-1/4 w-16 h-16 bg-accent/30 rounded-full animate-float" style="animation-delay: -4s;"></div>
+            
+            <div class="container mx-auto px-4 text-center relative z-10">
+                <div class="max-w-4xl mx-auto" data-aos="fade-up">
+                    <!-- Breadcrumb -->
+                    <nav class="flex justify-center mb-8" aria-label="Breadcrumb">
+                        <ol class="inline-flex items-center space-x-1 md:space-x-3">
+                            <li class="inline-flex items-center">
+                                <a href="index.html" class="text-muted hover:text-primary transition-colors">
+                                    <i class="ri-home-line mr-2"></i>Home
+                                </a>
+                            </li>
+                            <li>
+                                <div class="flex items-center">
+                                    <i class="ri-arrow-right-s-line text-muted"></i>
+                                    <span class="text-primary font-medium">Services</span>
+                                </div>
+                            </li>
+                        </ol>
+                    </nav>
+                    
+                    <div class="mb-6">
+                        <span class="inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4">
+                            🚀 Comprehensive IT Solutions
+                        </span>
+                    </div>
+                    
+                    <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+                        Transform Your Business with
+                        <span class="text-gradient bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+                            Expert Technology Services
+                        </span>
+                    </h1>
+                    
+                    <p class="text-xl md:text-2xl text-muted mb-10 max-w-3xl mx-auto leading-relaxed">
+                        From strategic consulting to implementation, ASI delivers end-to-end technology solutions that drive innovation, enhance security, and accelerate your business growth.
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-6 justify-center items-center" data-aos="fade-up" data-aos-delay="200">
+                        <a href="#services-overview" class="btn-primary px-10 py-4 rounded-xl font-semibold text-lg transition-all hover:scale-105 hover:shadow-2xl">
+                            Explore Our Services
+                            <i class="ri-arrow-down-line ml-2"></i>
+                        </a>
+                        <a href="contact.html" class="btn-outline px-10 py-4 rounded-xl font-semibold text-lg transition-all hover:scale-105">
+                            Get Free Consultation
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Services Overview Section -->
+        <section id="services-overview" class="py-24 bg-card/30">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-20" data-aos="fade-up">
+                    <div class="inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4">
+                        Our Expertise
+                    </div>
+                    <h2 class="text-4xl md:text-5xl font-bold mb-6">
+                        Complete Technology Solutions
+                    </h2>
+                    <p class="text-xl text-muted max-w-3xl mx-auto leading-relaxed">
+                        We provide comprehensive IT services designed to meet your unique business needs and drive sustainable growth.
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- IT Consultancy -->
+                    <div class="service-card group" data-aos="fade-up" data-aos-delay="100">
+                        <div class="relative p-8 rounded-2xl bg-background border border-border hover:border-primary/50 transition-all duration-500 hover:shadow-2xl hover:-translate-y-3 overflow-hidden">
+                            <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-teal-500/10 to-transparent rounded-full -translate-y-16 translate-x-16"></div>
+                            <div class="relative z-10">
+                                <div class="w-16 h-16 bg-teal-500/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-teal-500/20 transition-colors group-hover:scale-110 transform duration-300">
+                                    <i class="ri-lightbulb-line text-3xl text-teal-500"></i>
+                                </div>
+                                <h3 class="text-2xl font-display font-semibold mb-4">IT Consultancy</h3>
+                                <p class="text-muted mb-6 leading-relaxed">
+                                    Strategic technology consulting to optimize your IT investments, improve efficiency, and align technology with business objectives.
+                                </p>
+                                <ul class="text-sm text-muted space-y-2 mb-6">
+                                    <li class="flex items-center"><i class="ri-check-line text-teal-500 mr-2"></i>Technology Strategy</li>
+                                    <li class="flex items-center"><i class="ri-check-line text-teal-500 mr-2"></i>IT Infrastructure Assessment</li>
+                                    <li class="flex items-center"><i class="ri-check-line text-teal-500 mr-2"></i>Digital Roadmap Planning</li>
+                                </ul>
+                                <a href="it-consultancy.html" class="inline-flex items-center text-primary font-medium hover:text-accent transition-colors group-hover:translate-x-2 transform duration-300">
+                                    Learn More
+                                    <i class="ri-arrow-right-line ml-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Cloud Services -->
+                    <div class="service-card group" data-aos="fade-up" data-aos-delay="200">
+                        <div class="relative p-8 rounded-2xl bg-background border border-border hover:border-primary/50 transition-all duration-500 hover:shadow-2xl hover:-translate-y-3 overflow-hidden">
+                            <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-primary/10 to-transparent rounded-full -translate-y-16 translate-x-16"></div>
+                            <div class="relative z-10">
+                                <div class="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors group-hover:scale-110 transform duration-300">
+                                    <i class="ri-cloud-line text-3xl text-primary"></i>
+                                </div>
+                                <h3 class="text-2xl font-display font-semibold mb-4">Cloud Services</h3>
+                                <p class="text-muted mb-6 leading-relaxed">
+                                    Scalable cloud infrastructure, migration services, and optimization solutions to enhance business agility and reduce costs.
+                                </p>
+                                <ul class="text-sm text-muted space-y-2 mb-6">
+                                    <li class="flex items-center"><i class="ri-check-line text-primary mr-2"></i>Cloud Migration</li>
+                                    <li class="flex items-center"><i class="ri-check-line text-primary mr-2"></i>Infrastructure Management</li>
+                                    <li class="flex items-center"><i class="ri-check-line text-primary mr-2"></i>Multi-Cloud Solutions</li>
+                                </ul>
+                                <a href="cloud-services.html" class="inline-flex items-center text-primary font-medium hover:text-accent transition-colors group-hover:translate-x-2 transform duration-300">
+                                    Learn More
+                                    <i class="ri-arrow-right-line ml-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Cybersecurity -->
+                    <div class="service-card group" data-aos="fade-up" data-aos-delay="300">
+                        <div class="relative p-8 rounded-2xl bg-background border border-border hover:border-primary/50 transition-all duration-500 hover:shadow-2xl hover:-translate-y-3 overflow-hidden">
+                            <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-red-500/10 to-transparent rounded-full -translate-y-16 translate-x-16"></div>
+                            <div class="relative z-10">
+                                <div class="w-16 h-16 bg-red-500/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-red-500/20 transition-colors group-hover:scale-110 transform duration-300">
+                                    <i class="ri-shield-check-line text-3xl text-red-500"></i>
+                                </div>
+                                <h3 class="text-2xl font-display font-semibold mb-4">Cybersecurity</h3>
+                                <p class="text-muted mb-6 leading-relaxed">
+                                    Comprehensive security solutions to protect your digital assets, ensure compliance, and maintain business continuity.
+                                </p>
+                                <ul class="text-sm text-muted space-y-2 mb-6">
+                                    <li class="flex items-center"><i class="ri-check-line text-red-500 mr-2"></i>Security Assessment</li>
+                                    <li class="flex items-center"><i class="ri-check-line text-red-500 mr-2"></i>Threat Monitoring</li>
+                                    <li class="flex items-center"><i class="ri-check-line text-red-500 mr-2"></i>Compliance Management</li>
+                                </ul>
+                                <a href="cybersecurity.html" class="inline-flex items-center text-primary font-medium hover:text-accent transition-colors group-hover:translate-x-2 transform duration-300">
+                                    Learn More
+                                    <i class="ri-arrow-right-line ml-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Software Development -->
+                    <div class="service-card group" data-aos="fade-up" data-aos-delay="400">
+                        <div class="relative p-8 rounded-2xl bg-background border border-border hover:border-primary/50 transition-all duration-500 hover:shadow-2xl hover:-translate-y-3 overflow-hidden">
+                            <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-secondary/10 to-transparent rounded-full -translate-y-16 translate-x-16"></div>
+                            <div class="relative z-10">
+                                <div class="w-16 h-16 bg-secondary/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-secondary/20 transition-colors group-hover:scale-110 transform duration-300">
+                                    <i class="ri-code-line text-3xl text-secondary"></i>
+                                </div>
+                                <h3 class="text-2xl font-display font-semibold mb-4">Software Development</h3>
+                                <p class="text-muted mb-6 leading-relaxed">
+                                    Custom software solutions, web applications, and mobile apps tailored to your specific business requirements.
+                                </p>
+                                <ul class="text-sm text-muted space-y-2 mb-6">
+                                    <li class="flex items-center"><i class="ri-check-line text-secondary mr-2"></i>Custom Applications</li>
+                                    <li class="flex items-center"><i class="ri-check-line text-secondary mr-2"></i>Web Development</li>
+                                    <li class="flex items-center"><i class="ri-check-line text-secondary mr-2"></i>Mobile Apps</li>
+                                </ul>
+                                <a href="software-development.html" class="inline-flex items-center text-primary font-medium hover:text-accent transition-colors group-hover:translate-x-2 transform duration-300">
+                                    Learn More
+                                    <i class="ri-arrow-right-line ml-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Digital Transformation -->
+                    <div class="service-card group" data-aos="fade-up" data-aos-delay="500">
+                        <div class="relative p-8 rounded-2xl bg-background border border-border hover:border-primary/50 transition-all duration-500 hover:shadow-2xl hover:-translate-y-3 overflow-hidden">
+                            <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-purple-500/10 to-transparent rounded-full -translate-y-16 translate-x-16"></div>
+                            <div class="relative z-10">
+                                <div class="w-16 h-16 bg-purple-500/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-purple-500/20 transition-colors group-hover:scale-110 transform duration-300">
+                                    <i class="ri-refresh-line text-3xl text-purple-500"></i>
+                                </div>
+                                <h3 class="text-2xl font-display font-semibold mb-4">Digital Transformation</h3>
+                                <p class="text-muted mb-6 leading-relaxed">
+                                    Strategic technology adoption and process optimization to modernize operations and improve efficiency.
+                                </p>
+                                <ul class="text-sm text-muted space-y-2 mb-6">
+                                    <li class="flex items-center"><i class="ri-check-line text-purple-500 mr-2"></i>Process Automation</li>
+                                    <li class="flex items-center"><i class="ri-check-line text-purple-500 mr-2"></i>Legacy Modernization</li>
+                                    <li class="flex items-center"><i class="ri-check-line text-purple-500 mr-2"></i>Change Management</li>
+                                </ul>
+                                <a href="digital-transformation.html" class="inline-flex items-center text-primary font-medium hover:text-accent transition-colors group-hover:translate-x-2 transform duration-300">
+                                    Learn More
+                                    <i class="ri-arrow-right-line ml-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Data Analytics -->
+                    <div class="service-card group" data-aos="fade-up" data-aos-delay="600">
+                        <div class="relative p-8 rounded-2xl bg-background border border-border hover:border-primary/50 transition-all duration-500 hover:shadow-2xl hover:-translate-y-3 overflow-hidden">
+                            <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-green-500/10 to-transparent rounded-full -translate-y-16 translate-x-16"></div>
+                            <div class="relative z-10">
+                                <div class="w-16 h-16 bg-green-500/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-green-500/20 transition-colors group-hover:scale-110 transform duration-300">
+                                    <i class="ri-bar-chart-line text-3xl text-green-500"></i>
+                                </div>
+                                <h3 class="text-2xl font-display font-semibold mb-4">Data Analytics</h3>
+                                <p class="text-muted mb-6 leading-relaxed">
+                                    Transform raw data into actionable insights with advanced analytics and business intelligence solutions.
+                                </p>
+                                <ul class="text-sm text-muted space-y-2 mb-6">
+                                    <li class="flex items-center"><i class="ri-check-line text-green-500 mr-2"></i>Business Intelligence</li>
+                                    <li class="flex items-center"><i class="ri-check-line text-green-500 mr-2"></i>Predictive Analytics</li>
+                                    <li class="flex items-center"><i class="ri-check-line text-green-500 mr-2"></i>Data Visualization</li>
+                                </ul>
+                                <a href="data-analytics.html" class="inline-flex items-center text-primary font-medium hover:text-accent transition-colors group-hover:translate-x-2 transform duration-300">
+                                    Learn More
+                                    <i class="ri-arrow-right-line ml-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Why Choose Our Services Section -->
+        <section class="py-20 bg-background">
+            <div class="container mx-auto px-4">
+                <div class="grid lg:grid-cols-2 gap-16 items-center">
+                    <div data-aos="fade-right">
+                        <span class="inline-block bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-4">Why Choose ASI</span>
+                        <h2 class="text-4xl md:text-5xl font-display font-bold mb-6">
+                            Excellence in Every Service
+                        </h2>
+                        <p class="text-xl text-muted mb-8 leading-relaxed">
+                            Our comprehensive approach combines technical expertise with strategic thinking to deliver solutions that drive real business value and sustainable growth.
+                        </p>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i class="ri-award-line text-xl text-primary"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-semibold mb-2">Certified Professionals</h3>
+                                    <p class="text-muted">Our team holds industry-leading certifications and brings deep expertise across all technology domains.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i class="ri-customer-service-line text-xl text-primary"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-semibold mb-2">24/7 Support</h3>
+                                    <p class="text-muted">Round-the-clock technical support and monitoring to ensure your systems run smoothly and efficiently.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i class="ri-rocket-line text-xl text-primary"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-semibold mb-2">Innovation Focus</h3>
+                                    <p class="text-muted">We stay ahead of technology trends to provide cutting-edge solutions that give you a competitive advantage.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div data-aos="fade-left">
+                        <div class="relative">
+                            <img src="assets/images/consulting.jpg" alt="ASI Services" class="w-full h-auto rounded-2xl shadow-2xl">
+                            <div class="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent rounded-2xl"></div>
+                            
+                            <!-- Floating Stats Cards -->
+                            <div class="absolute -bottom-6 -left-6 bg-background p-6 rounded-xl shadow-xl border border-border">
+                                <div class="text-center">
+                                    <div class="text-3xl font-bold text-primary mb-2">500+</div>
+                                    <div class="text-sm text-muted">Projects Delivered</div>
+                                </div>
+                            </div>
+                            
+                            <div class="absolute -top-6 -right-6 bg-background p-6 rounded-xl shadow-xl border border-border">
+                                <div class="text-center">
+                                    <div class="text-3xl font-bold text-accent mb-2">98%</div>
+                                    <div class="text-sm text-muted">Client Satisfaction</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Service Process Section -->
+        <section class="py-20 bg-card/30">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16" data-aos="fade-up">
+                    <span class="inline-block bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-4">Our Process</span>
+                    <h2 class="text-4xl md:text-5xl font-display font-bold mb-6">
+                        How We Deliver Excellence
+                    </h2>
+                    <p class="text-xl text-muted max-w-3xl mx-auto">
+                        Our proven methodology ensures successful project delivery and long-term client satisfaction.
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="text-center" data-aos="fade-up" data-aos-delay="100">
+                        <div class="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="ri-search-line text-3xl text-primary"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">1. Discovery</h3>
+                        <p class="text-muted">We analyze your current systems, understand your challenges, and identify opportunities for improvement.</p>
+                    </div>
+                    
+                    <div class="text-center" data-aos="fade-up" data-aos-delay="200">
+                        <div class="w-20 h-20 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="ri-lightbulb-line text-3xl text-accent"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">2. Strategy</h3>
+                        <p class="text-muted">We develop a comprehensive strategy and roadmap tailored to your specific business objectives and requirements.</p>
+                    </div>
+                    
+                    <div class="text-center" data-aos="fade-up" data-aos-delay="300">
+                        <div class="w-20 h-20 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="ri-tools-line text-3xl text-secondary"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">3. Implementation</h3>
+                        <p class="text-muted">Our expert team executes the solution with precision, ensuring minimal disruption to your operations.</p>
+                    </div>
+                    
+                    <div class="text-center" data-aos="fade-up" data-aos-delay="400">
+                        <div class="w-20 h-20 bg-green-500/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="ri-customer-service-line text-3xl text-green-500"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">4. Support</h3>
+                        <p class="text-muted">We provide ongoing support, monitoring, and optimization to ensure long-term success and ROI.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Testimonials Section -->
+        <section class="py-20 bg-background">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16" data-aos="fade-up">
+                    <span class="inline-block bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-4">Client Success Stories</span>
+                    <h2 class="text-4xl md:text-5xl font-display font-bold mb-6">
+                        What Our Clients Say
+                    </h2>
+                    <p class="text-xl text-muted max-w-3xl mx-auto">
+                        Don't just take our word for it. Here's what our satisfied clients have to say about our services.
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-card p-8 rounded-2xl border border-border hover:shadow-xl transition-all" data-aos="fade-up" data-aos-delay="100">
+                        <div class="flex items-center mb-6">
+                            <img src="assets/images/testimonial-1.jpg" alt="Client" class="w-12 h-12 rounded-full object-cover mr-4">
+                            <div>
+                                <h4 class="font-semibold">Sarah Johnson</h4>
+                                <p class="text-sm text-muted">CTO, TechCorp</p>
+                            </div>
+                        </div>
+                        <p class="text-muted mb-4">
+                            "ASI's cloud migration strategy reduced our infrastructure costs by 40% while significantly improving performance and scalability."
+                        </p>
+                        <div class="flex text-yellow-400">
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-card p-8 rounded-2xl border border-border hover:shadow-xl transition-all" data-aos="fade-up" data-aos-delay="200">
+                        <div class="flex items-center mb-6">
+                            <img src="assets/images/testimonial-2.jpg" alt="Client" class="w-12 h-12 rounded-full object-cover mr-4">
+                            <div>
+                                <h4 class="font-semibold">Michael Chen</h4>
+                                <p class="text-sm text-muted">CEO, InnovateLab</p>
+                            </div>
+                        </div>
+                        <p class="text-muted mb-4">
+                            "The cybersecurity solutions implemented by ASI have given us complete peace of mind. Their proactive approach is exceptional."
+                        </p>
+                        <div class="flex text-yellow-400">
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-card p-8 rounded-2xl border border-border hover:shadow-xl transition-all" data-aos="fade-up" data-aos-delay="300">
+                        <div class="flex items-center mb-6">
+                            <img src="assets/images/testimonial-3.jpg" alt="Client" class="w-12 h-12 rounded-full object-cover mr-4">
+                            <div>
+                                <h4 class="font-semibold">Emily Rodriguez</h4>
+                                <p class="text-sm text-muted">Director, DataFlow Inc</p>
+                            </div>
+                        </div>
+                        <p class="text-muted mb-4">
+                            "ASI's data analytics platform revolutionized our decision-making process. The insights we now have are invaluable."
+                        </p>
+                        <div class="flex text-yellow-400">
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- CTA Section -->
+        <section class="py-20 bg-gradient-to-r from-primary to-secondary">
+            <div class="container mx-auto px-4 text-center">
+                <div class="max-w-4xl mx-auto text-white" data-aos="fade-up">
+                    <h2 class="text-4xl md:text-5xl font-display font-bold mb-6">
+                        Ready to Transform Your Business?
+                    </h2>
+                    <p class="text-xl mb-8 opacity-90">
+                        Let's discuss how our comprehensive IT services can help you achieve your technology goals and drive sustainable growth.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="contact.html" class="bg-white text-primary px-8 py-4 rounded-xl font-semibold text-lg transition-all hover:scale-105 hover:shadow-xl">
+                            Start Your Project
+                            <i class="ri-arrow-right-line ml-2"></i>
+                        </a>
+                        <a href="case-studies.html" class="border-2 border-white text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all hover:bg-white hover:text-primary">
+                            View Case Studies
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Enhanced Footer -->
+    <footer class="bg-card border-t border-border mt-20">
+        <div class="container mx-auto px-4 py-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div class="lg:col-span-2">
+                    <div class="flex items-center space-x-3 mb-6">
+                        <img src="assets/images/asi-logo.png" alt="ASI Logo" class="h-12 w-auto">
+                        <div>
+                            <div class="text-xl font-display font-bold">ASI</div>
+                            <div class="text-sm text-muted">Advanced Systems Infrastructure</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-6 max-w-md leading-relaxed">
+                        Advanced Systems Infrastructure(ASI) is your trusted partner for innovative IT solutions. We help businesses transform through technology, ensuring security, efficiency, and sustainable growth.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-card rounded-lg flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
+                            <i class="ri-linkedin-line"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-card rounded-lg flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
+                            <i class="ri-twitter-line"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-card rounded-lg flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
+                            <i class="ri-facebook-line"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-card rounded-lg flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="font-semibold text-lg mb-4">Quick Links</h3>
+                    <ul class="space-y-3">
+                        <li><a href="about.html" class="text-muted hover:text-primary transition-colors">About Us</a></li>
+                        <li><a href="services.html" class="text-muted hover:text-primary transition-colors">Services</a></li>
+                        <li><a href="industries-we-serve.html" class="text-muted hover:text-primary transition-colors">Industries</a></li>
+                        <li><a href="case-studies.html" class="text-muted hover:text-primary transition-colors">Case Studies</a></li>
+                        <li><a href="news-insights.html" class="text-muted hover:text-primary transition-colors">News & Insights</a></li>
+                        <li><a href="contact.html" class="text-muted hover:text-primary transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="font-semibold text-lg mb-4">Contact Info</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-start space-x-3">
+                            <i class="ri-map-pin-line text-primary mt-1"></i>
+                            <div class="text-muted">
+                                <p>100 Sand-fill Avenue</p>
+                                <p>>Bonny Island Rivers State</p>
+                                <p>Nigeria</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="ri-phone-line text-primary"></i>
+                            <a href="tel:+2349078678189" class="text-muted hover:text-primary transition-colors">+234 907 867 8189</a>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="ri-mail-line text-primary"></i>
+                            <a href="mailto:info@asi.com.ng" class="text-muted hover:text-primary transition-colors">info@asi.com.ng</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Bottom Bar -->
+            <div class="border-t border-border mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-muted text-sm">
+                    © 2024 Advanced Systems Infrastructure(ASI). All rights reserved.
+                </p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="text-muted hover:text-primary transition-colors text-sm">Privacy Policy</a>
+                    <a href="#" class="text-muted hover:text-primary transition-colors text-sm">Terms of Service</a>
+                    <a href="#" class="text-muted hover:text-primary transition-colors text-sm">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Back to Top -->
+    <button id="backToTop" class="back-to-top fixed bottom-6 right-6 w-12 h-12 bg-primary text-white rounded-full shadow-lg opacity-0 invisible transition-all duration-300 hover:scale-110 z-30">
+        <i class="ri-arrow-up-line"></i>
+    </button>
+    
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+            offset: 100
+        });
+    </script>
+</body>
+</html>

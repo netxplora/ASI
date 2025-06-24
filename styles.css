@@ -1,0 +1,45 @@
+:where([class^="ri-"])::before { content: "\f3c2"; } 
+body { 
+  font-family: 'Inter', sans-serif; 
+} 
+.hero-section { 
+  background-image: url('images/hero-building.jpg'); 
+  background-size: cover; 
+  background-position: center; 
+} 
+.hero-overlay { 
+  background: linear-gradient(90deg, rgba(17, 24, 39, 0.85) 0%, rgba(17, 24, 39, 0.7) 50%, rgba(17, 24, 39, 0.5) 100%); 
+} 
+.service-card { 
+  transition: all 0.3s ease; 
+} 
+.service-card:hover { 
+  transform: translateY(-5px); 
+  box-shadow: 0 10px 25px -5px rgba(66, 99, 235, 0.1); 
+} 
+.case-study-card { 
+  transition: transform 0.3s ease; 
+} 
+.case-study-card:hover { 
+  transform: translateY(-5px); 
+} 
+input:focus, textarea:focus, select:focus { 
+  outline: none; 
+} 
+.breadcrumb-item:not(:last-child)::after { 
+  content: "/"; 
+  margin-left: 0.5rem; 
+  margin-right: 0.5rem; 
+  color: #9CA3AF; 
+} 
+.team-member-card {
+  transition: all 0.3s ease;
+}
+.team-member-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px -5px rgba(66, 99, 235, 0.1);
+}
+.about-section-image {
+  border-radius: 8px;
+  overflow: hidden;
+}
