@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ASI - News & Insights | Advanced Systems Infrastructure</title>
+  <meta name="description" content="Stay updated with the latest technology trends, insights, and industry news. Expert analysis and thought leadership from ASI.">
+  
+  <!-- Preload critical resources -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" as="style">
+  <link rel="preload" href="assets/css/main.css" as="style">
+  
+  <!-- Stylesheets -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+  <script>tailwind.config={theme:{extend:{colors:{primary:'#4263EB',secondary:'#1E293B'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body class="bg-gray-950 text-white transition-colors duration-300">
+  <!-- Professional Contact Bar -->
+  <div class="bg-gray-900 border-b border-gray-800 py-2 hidden md:block">
+    <div class="container mx-auto px-4">
+      <div class="flex justify-between items-center text-sm">
+        <div class="flex items-center space-x-6">
+          <a href="mailto:info@asi.com.ng" class="text-gray-300 hover:text-white transition-colors flex items-center gap-2">
+            <i class="ri-mail-line"></i>
+            info@asi.com.ng
+          </a>
+          <a href="tel:+2349078678189" class="text-gray-300 hover:text-white transition-colors flex items-center gap-2">
+            <i class="ri-phone-line"></i>
+            +234 907 867 8189
+          </a>
+        </div>
+        <div class="flex items-center space-x-4">
+          <a href="#" class="text-gray-300 hover:text-white transition-colors">
+            <i class="ri-linkedin-fill"></i>
+          </a>
+          <a href="#" class="text-gray-300 hover:text-white transition-colors">
+            <i class="ri-twitter-fill"></i>
+          </a>
+          <a href="#" class="text-gray-300 hover:text-white transition-colors">
+            <i class="ri-facebook-fill"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Enhanced Header -->
+  <header class="w-full bg-gray-900/95 backdrop-blur-md fixed top-0 md:top-10 z-50 transition-all duration-300 border-b border-gray-800/50">
+    <div class="container mx-auto px-4">
+      <div class="flex justify-between items-center py-4">
+        <!-- Logo Section -->
+        <div class="flex items-center">
+          <a href="index.html" class="transition-transform hover:scale-105">
+            <img src="assets/images/asi-logo.png" alt="ASI Logo" class="h-12 w-auto">
+          </a>
+        </div>
+        
+        <!-- Desktop Navigation -->
+        <nav class="hidden lg:flex items-center space-x-8">
+          <a href="index.html" class="text-gray-300 hover:text-white transition-colors font-medium">Home</a>
+          <a href="about.html" class="text-gray-300 hover:text-white transition-colors font-medium">About</a>
+          
+          <!-- Services Dropdown -->
+          <div class="relative group">
+            <button class="text-gray-300 hover:text-white transition-colors font-medium flex items-center gap-1">
+              Services
+              <i class="ri-arrow-down-s-line text-sm transition-transform group-hover:rotate-180"></i>
+            </button>
+            <div class="absolute top-full left-0 mt-2 w-64 bg-gray-800/95 backdrop-blur-md rounded-lg shadow-xl border border-gray-700/50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+              <div class="p-2">
+                <a href="it-consultancy.html" class="block px-4 py-3 text-gray-300 hover:text-white hover:bg-gray-700/50 rounded-lg transition-colors">
+                  <div class="flex items-center gap-3">
+                    <i class="ri-computer-line text-primary"></i>
+                    <div>
+                      <div class="font-medium">IT Consultancy</div>
+                      <div class="text-sm text-gray-400">Strategic technology guidance</div>
+                    </div>
+                  </div>
+                </a>
+                <a href="cloud-services.html" class="block px-4 py-3 text-gray-300 hover:text-white hover:bg-gray-700/50 rounded-lg transition-colors">
+                  <div class="flex items-center gap-3">
+                    <i class="ri-cloud-line text-primary"></i>
+                    <div>
+                      <div class="font-medium">Cloud Services</div>
+                      <div class="text-sm text-gray-400">Scalable cloud solutions</div>
+                    </div>
+                  </div>
+                </a>
+                <a href="cybersecurity.html" class="block px-4 py-3 text-gray-300 hover:text-white hover:bg-gray-700/50 rounded-lg transition-colors">
+                  <div class="flex items-center gap-3">
+                    <i class="ri-shield-check-line text-primary"></i>
+                    <div>
+                      <div class="font-medium">Cybersecurity</div>
+                      <div class="text-sm text-gray-400">Advanced security solutions</div>
+                    </div>
+                  </div>
+                </a>
+                <a href="software-development.html" class="block px-4 py-3 text-gray-300 hover:text-white hover:bg-gray-700/50 rounded-lg transition-colors">
+                  <div class="flex items-center gap-3">
+                    <i class="ri-code-line text-primary"></i>
+                    <div>
+                      <div class="font-medium">Software Development</div>
+                      <div class="text-sm text-gray-400">Custom software solutions</div>
+                    </div>
+                  </div>
+                </a>
+                <a href="data-analytics.html" class="block px-4 py-3 text-gray-300 hover:text-white hover:bg-gray-700/50 rounded-lg transition-colors">
+                  <div class="flex items-center gap-3">
+                    <i class="ri-bar-chart-line text-primary"></i>
+                    <div>
+                      <div class="font-medium">Data Analytics</div>
+                      <div class="text-sm text-gray-400">Data-driven insights</div>
+                    </div>
+                  </div>
+                </a>
+                <a href="digital-transformation.html" class="block px-4 py-3 text-gray-300 hover:text-white hover:bg-gray-700/50 rounded-lg transition-colors">
+                  <div class="flex items-center gap-3">
+                    <i class="ri-refresh-line text-primary"></i>
+                    <div>
+                      <div class="font-medium">Digital Transformation</div>
+                      <div class="text-sm text-gray-400">Business modernization</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <a href="industries-we-serve.html" class="text-gray-300 hover:text-white transition-colors font-medium">Industries</a>
+          <a href="case-studies.html" class="text-gray-300 hover:text-white transition-colors font-medium">Case Studies</a>
+          <a href="news-insights.html" class="text-primary font-medium">News & Insights</a>
+          <a href="contact.html" class="text-gray-300 hover:text-white transition-colors font-medium">Contact</a>
+        </nav>
+        
+        <!-- Desktop Actions -->
+        <div class="hidden lg:flex items-center space-x-4">
+          <!-- Theme Toggle -->
+          <button id="themeToggle" class="p-2 rounded-lg bg-gray-800/50 hover:bg-gray-700/50 transition-colors" aria-label="Toggle theme">
+            <i class="ri-sun-line text-yellow-400 dark:hidden"></i>
+            <i class="ri-moon-line text-blue-400 hidden dark:block"></i>
+          </button>
+          
+          <!-- CTA Button -->
+          <a href="contact.html" class="bg-primary hover:bg-blue-600 text-white px-6 py-2.5 rounded-lg font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg">
+            Get Started
+          </a>
+        </div>
+        
+        <!-- Mobile Menu Button -->
+        <div class="lg:hidden flex items-center space-x-3">
+          <!-- Mobile Theme Toggle -->
+          <button id="themeToggleMobile" class="p-2 rounded-lg bg-gray-800/50 hover:bg-gray-700/50 transition-colors" aria-label="Toggle theme">
+            <i class="ri-sun-line text-yellow-400 dark:hidden"></i>
+            <i class="ri-moon-line text-blue-400 hidden dark:block"></i>
+          </button>
+          
+          <!-- Hamburger Menu -->
+          <button id="mobileMenuButton" class="relative w-8 h-8 flex flex-col justify-center items-center space-y-1.5 group">
+            <span class="w-6 h-0.5 bg-white transition-all duration-300 group-hover:bg-primary hamburger-line-1"></span>
+            <span class="w-6 h-0.5 bg-white transition-all duration-300 group-hover:bg-primary hamburger-line-2"></span>
+            <span class="w-6 h-0.5 bg-white transition-all duration-300 group-hover:bg-primary hamburger-line-3"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Enhanced Mobile Menu -->
+  <div id="mobileMenu" class="fixed inset-0 bg-gray-900/98 backdrop-blur-md z-40 lg:hidden transform translate-x-full transition-transform duration-300">
+    <div class="flex flex-col h-full">
+      <!-- Mobile Menu Header -->
+      <div class="flex justify-between items-center p-6 border-b border-gray-800">
+        <img src="assets/images/asi-logo.png" alt="ASI Logo" class="h-10 w-auto">
+        <button id="closeMobileMenu" class="w-8 h-8 flex items-center justify-center">
+          <i class="ri-close-line text-2xl text-white"></i>
+        </button>
+      </div>
+      
+      <!-- Mobile Navigation -->
+      <nav class="flex-1 px-6 py-8 overflow-y-auto">
+        <div class="space-y-6">
+          <a href="index.html" class="block text-xl font-medium text-gray-300 hover:text-white transition-colors">Home</a>
+          <a href="about.html" class="block text-xl font-medium text-gray-300 hover:text-white transition-colors">About</a>
+          
+          <!-- Mobile Services Dropdown -->
+          <div class="space-y-3">
+            <button id="mobileServicesToggle" class="flex items-center justify-between w-full text-xl font-medium text-gray-300 hover:text-white transition-colors">
+              Services
+              <i class="ri-arrow-down-s-line transition-transform duration-300"></i>
+            </button>
+            <div id="mobileServicesMenu" class="pl-4 space-y-3 max-h-0 overflow-hidden transition-all duration-300">
+              <a href="it-consultancy.html" class="block text-gray-400 hover:text-white transition-colors">IT Consultancy</a>
+              <a href="cloud-services.html" class="block text-gray-400 hover:text-white transition-colors">Cloud Services</a>
+              <a href="cybersecurity.html" class="block text-gray-400 hover:text-white transition-colors">Cybersecurity</a>
+              <a href="software-development.html" class="block text-gray-400 hover:text-white transition-colors">Software Development</a>
+              <a href="data-analytics.html" class="block text-gray-400 hover:text-white transition-colors">Data Analytics</a>
+              <a href="digital-transformation.html" class="block text-gray-400 hover:text-white transition-colors">Digital Transformation</a>
+            </div>
+          </div>
+          
+          <a href="industries-we-serve.html" class="block text-xl font-medium text-gray-300 hover:text-white transition-colors">Industries</a>
+          <a href="case-studies.html" class="block text-xl font-medium text-gray-300 hover:text-white transition-colors">Case Studies</a>
+          <a href="news-insights.html" class="block text-xl font-medium text-primary transition-colors">News & Insights</a>
+          <a href="contact.html" class="block text-xl font-medium text-gray-300 hover:text-white transition-colors">Contact</a>
+        </div>
+      </nav>
+      
+      <!-- Mobile Contact Info -->
+      <div class="p-6 border-t border-gray-800">
+        <div class="space-y-4">
+          <a href="mailto:info@asi.com.ng" class="flex items-center gap-3 text-gray-300 hover:text-white transition-colors">
+            <i class="ri-mail-line"></i>
+            <span>info@asi.com.ng</span>
+          </a>
+          <a href="tel:+2349078678189" class="flex items-center gap-3 text-gray-300 hover:text-white transition-colors">
+            <i class="ri-phone-line"></i>
+            <span>+234 907 867 8189</span>
+          </a>
+          <div class="flex items-center gap-4 pt-4">
+            <a href="#" class="text-gray-300 hover:text-white transition-colors">
+              <i class="ri-linkedin-fill text-xl"></i>
+            </a>
+            <a href="#" class="text-gray-300 hover:text-white transition-colors">
+              <i class="ri-twitter-fill text-xl"></i>
+            </a>
+            <a href="#" class="text-gray-300 hover:text-white transition-colors">
+              <i class="ri-facebook-fill text-xl"></i>
+            </a>
+          </div>
+          <a href="contact.html" class="block w-full bg-primary hover:bg-blue-600 text-white text-center py-3 rounded-lg font-medium transition-colors mt-6">
+            Get Started
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Enhanced Hero Section -->
+  <section class="hero-section relative min-h-[80vh] flex items-center pt-16 overflow-hidden" style="background-image: url('images/technology.jpg'); background-size: cover; background-position: center; background-attachment: fixed;">
+    <!-- Gradient Overlays -->
+    <div class="absolute inset-0 bg-gradient-to-r from-gray-900/90 via-gray-900/70 to-gray-900/90"></div>
+    <div class="absolute inset-0 bg-gradient-to-b from-transparent via-gray-900/20 to-gray-900/80"></div>
+    
+    <!-- Animated Background Elements -->
+    <div class="absolute inset-0 overflow-hidden">
+      <div class="floating-element absolute top-20 left-10 w-20 h-20 bg-primary/10 rounded-full animate-float"></div>
+      <div class="floating-element absolute top-40 right-20 w-16 h-16 bg-blue-500/10 rounded-full animate-float-delayed"></div>
+      <div class="floating-element absolute bottom-20 left-1/4 w-12 h-12 bg-purple-500/10 rounded-full animate-float"></div>
+    </div>
+    
+    <div class="container mx-auto px-4 py-20 relative z-10 w-full">
+      <div class="max-w-4xl">
+        <div class="flex items-center text-sm text-gray-300 mb-6" data-aos="fade-up">
+          <a href="index.html" class="hover:text-white transition-colors">Home</a>
+          <i class="ri-arrow-right-s-line mx-2"></i>
+          <span class="text-primary">News & Insights</span>
+        </div>
+        
+        <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight" data-aos="fade-up" data-aos-delay="100">
+          Technology
+          <span class="text-gradient bg-gradient-to-r from-primary to-blue-400 bg-clip-text text-transparent">Insights</span>
+          & News
+        </h1>
+        
+        <p class="text-xl text-gray-300 mb-8 leading-relaxed max-w-2xl" data-aos="fade-up" data-aos-delay="200">
+          Stay ahead of the curve with expert insights, industry trends, and thought leadership from our technology specialists. Discover the latest innovations shaping the digital landscape.
+        </p>
+        
+        <div class="flex flex-col sm:flex-row gap-4 mb-12" data-aos="fade-up" data-aos-delay="300">
+          <a href="#featured-posts" class="btn-primary inline-flex items-center justify-center px-8 py-4 bg-primary hover:bg-blue-600 text-white font-semibold rounded-button transition-all duration-300 hover:scale-105 hover:shadow-lg">
+            Explore Articles
+            <i class="ri-arrow-down-line ml-2"></i>
+          </a>
+          <a href="#newsletter" class="btn-secondary inline-flex items-center justify-center px-8 py-4 border-2 border-gray-600 hover:border-primary text-white font-semibold rounded-button transition-all duration-300 hover:bg-primary/10">
+            Subscribe to Newsletter
+            <i class="ri-mail-line ml-2"></i>
+          </a>
+        </div>
+        
+        <!-- Blog Statistics -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6" data-aos="fade-up" data-aos-delay="400">
+          <div class="text-center">
+            <div class="text-3xl font-bold text-primary mb-2">150+</div>
+            <div class="text-sm text-gray-300">Published Articles</div>
+          </div>
+          <div class="text-center">
+            <div class="text-3xl font-bold text-primary mb-2">25K+</div>
+            <div class="text-sm text-gray-300">Monthly Readers</div>
+          </div>
+          <div class="text-center">
+            <div class="text-3xl font-bold text-primary mb-2">12</div>
+            <div class="text-sm text-gray-300">Expert Authors</div>
+          </div>
+          <div class="text-center">
+            <div class="text-3xl font-bold text-primary mb-2">5</div>
+            <div class="text-sm text-gray-300">Years Publishing</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Scroll Indicator -->
+    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce" data-aos="fade-up" data-aos-delay="500">
+      <div class="w-6 h-10 border-2 border-gray-400 rounded-full flex justify-center">
+        <div class="w-1 h-3 bg-gray-400 rounded-full mt-2 animate-pulse"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Article -->
+  <section id="featured-posts" class="py-20 bg-gray-900/50">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold mb-6" data-aos="fade-up">
+          Featured Article
+        </h2>
+        <p class="text-xl text-gray-300 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+          Our most popular and impactful content, handpicked by our editorial team.
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div data-aos="fade-right">
+          <div class="flex items-center gap-3 mb-4">
+            <span class="px-3 py-1 bg-primary/20 text-primary text-sm rounded-full font-medium">Featured</span>
+            <span class="px-3 py-1 bg-gray-700 text-gray-300 text-sm rounded-full">AI & Machine Learning</span>
+          </div>
+          <h3 class="text-4xl font-bold mb-6">The Future of AI in Business: Opportunities and Challenges</h3>
+          <p class="text-gray-300 mb-6 leading-relaxed">Artificial Intelligence is revolutionizing how businesses operate, from automating routine tasks to providing deep insights from complex data. In this comprehensive analysis, we explore the transformative potential of AI and the key considerations for businesses looking to implement AI solutions successfully.</p>
+          
+          <div class="flex items-center gap-4 mb-8">
+            <img src="assets/images/testimonial-1.jpg" alt="John Adeyemi" class="w-12 h-12 rounded-full object-cover">
+            <div>
+              <p class="font-medium">John Adeyemi</p>
+              <p class="text-gray-400 text-sm">AI Solutions Architect • June 15, 2024</p>
+            </div>
+          </div>
+          
+          <div class="flex items-center gap-4 mb-8">
+            <div class="flex items-center gap-2 text-gray-400">
+              <i class="ri-time-line"></i>
+              <span class="text-sm">8 min read</span>
+            </div>
+            <div class="flex items-center gap-2 text-gray-400">
+              <i class="ri-eye-line"></i>
+              <span class="text-sm">2.4K views</span>
+            </div>
+            <div class="flex items-center gap-2 text-gray-400">
+              <i class="ri-heart-line"></i>
+              <span class="text-sm">156 likes</span>
+            </div>
+          </div>
+          
+          <a href="#" class="inline-flex items-center bg-primary hover:bg-blue-600 text-white py-3 px-8 rounded-button font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg">
+            Read Full Article
+            <i class="ri-arrow-right-line ml-2"></i>
+          </a>
+        </div>
+        
+        <div data-aos="fade-left">
+          <div class="relative group">
+            <img src="assets/images/case-study-1.jpg" alt="AI in Business" class="w-full h-auto rounded-2xl shadow-xl transition-transform duration-300 group-hover:scale-105">
+            <div class="absolute inset-0 bg-gradient-to-t from-gray-900/50 to-transparent rounded-2xl"></div>
+            <div class="absolute bottom-6 left-6 right-6">
+              <div class="flex items-center gap-2 text-white">
+                <i class="ri-play-circle-line text-2xl"></i>
+                <span class="text-sm font-medium">Watch Video Summary</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Latest Blog Posts -->
+  <section class="py-20">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold mb-6" data-aos="fade-up">
+          Latest Articles
+        </h2>
+        <p class="text-xl text-gray-300 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+          Explore our collection of articles, whitepapers, and industry insights to stay ahead in the rapidly evolving technology landscape.
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Blog Post 1 -->
+        <article class="bg-gray-800/50 rounded-2xl overflow-hidden hover:bg-gray-800/70 transition-all duration-300 group" data-aos="fade-up" data-aos-delay="100">
+          <div class="relative">
+            <img src="assets/images/case-study-2.jpg" alt="Cybersecurity Trends" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+            <div class="absolute top-4 left-4">
+              <span class="px-3 py-1 bg-red-500/20 text-red-400 text-sm rounded-full font-medium">Cybersecurity</span>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-3 group-hover:text-primary transition-colors">5 Emerging Cybersecurity Threats to Watch in 2024</h3>
+            <p class="text-gray-400 mb-4 leading-relaxed">As cyber threats continue to evolve, organizations must stay vigilant. Learn about the latest security challenges and how to protect your business from emerging threats.</p>
+            
+            <div class="flex items-center justify-between mb-4">
+              <div class="flex items-center gap-3">
+                <img src="assets/images/testimonial-2.jpg" alt="Sarah Okafor" class="w-8 h-8 rounded-full object-cover">
+                <div>
+                  <p class="text-sm font-medium">Sarah Okafor</p>
+                  <p class="text-xs text-gray-400">Security Specialist</p>
+                </div>
+              </div>
+              <p class="text-sm text-gray-400">May 28, 2024</p>
+            </div>
+            
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-4 text-gray-400 text-sm">
+                <span class="flex items-center gap-1">
+                  <i class="ri-time-line"></i>
+                  6 min
+                </span>
+                <span class="flex items-center gap-1">
+                  <i class="ri-eye-line"></i>
+                  1.8K
+                </span>
+              </div>
+              <a href="#" class="text-primary hover:text-blue-400 transition-colors font-medium">
+                Read More
+              </a>
+            </div>
+          </div>
+        </article>
+        
+        <!-- Blog Post 2 -->
+        <article class="bg-gray-800/50 rounded-2xl overflow-hidden hover:bg-gray-800/70 transition-all duration-300 group" data-aos="fade-up" data-aos-delay="200">
+          <div class="relative">
+            <img src="assets/images/case-study-3.jpg" alt="Cloud Migration" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+            <div class="absolute top-4 left-4">
+              <span class="px-3 py-1 bg-blue-500/20 text-blue-400 text-sm rounded-full font-medium">Cloud Computing</span>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-3 group-hover:text-primary transition-colors">Cloud Migration: A Step-by-Step Guide for Businesses</h3>
+            <p class="text-gray-400 mb-4 leading-relaxed">Moving to the cloud can be complex. This comprehensive guide outlines the key steps and considerations for a successful cloud migration strategy.</p>
+            
+            <div class="flex items-center justify-between mb-4">
+              <div class="flex items-center gap-3">
+                <img src="assets/images/testimonial-3.jpg" alt="David Nwosu" class="w-8 h-8 rounded-full object-cover">
+                <div>
+                  <p class="text-sm font-medium">David Nwosu</p>
+                  <p class="text-xs text-gray-400">Cloud Architect</p>
+                </div>
+              </div>
+              <p class="text-sm text-gray-400">April 15, 2024</p>
+            </div>
+            
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-4 text-gray-400 text-sm">
+                <span class="flex items-center gap-1">
+                  <i class="ri-time-line"></i>
+                  10 min
+                </span>
+                <span class="flex items-center gap-1">
+                  <i class="ri-eye-line"></i>
+                  3.2K
+                </span>
+              </div>
+              <a href="#" class="text-primary hover:text-blue-400 transition-colors font-medium">
+                Read More
+              </a>
+            </div>
+          </div>
+        </article>
+        
+        <!-- Blog Post 3 -->
+        <article class="bg-gray-800/50 rounded-2xl overflow-hidden hover:bg-gray-800/70 transition-all duration-300 group" data-aos="fade-up" data-aos-delay="300">
+          <div class="relative">
+            <img src="assets/images/case-study-6.jpg" alt="Digital Transformation" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+            <div class="absolute top-4 left-4">
+              <span class="px-3 py-1 bg-purple-500/20 text-purple-400 text-sm rounded-full font-medium">Digital Transformation</span>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-3 group-hover:text-primary transition-colors">Digital Transformation Success Stories from African Businesses</h3>
+            <p class="text-gray-400 mb-4 leading-relaxed">Discover how leading African companies have successfully implemented digital transformation initiatives and the lessons learned from their journeys.</p>
+            
+            <div class="flex items-center justify-between mb-4">
+              <div class="flex items-center gap-3">
+                <img src="assets/images/testimonial-1.jpg" alt="John Adeyemi" class="w-8 h-8 rounded-full object-cover">
+                <div>
+                  <p class="text-sm font-medium">John Adeyemi</p>
+                  <p class="text-xs text-gray-400">Digital Strategy Lead</p>
+                </div>
+              </div>
+              <p class="text-sm text-gray-400">March 10, 2024</p>
+            </div>
+            
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-4 text-gray-400 text-sm">
+                <span class="flex items-center gap-1">
+                  <i class="ri-time-line"></i>
+                  12 min
+                </span>
+                <span class="flex items-center gap-1">
+                  <i class="ri-eye-line"></i>
+                  2.7K
+                </span>
+              </div>
+              <a href="#" class="text-primary hover:text-blue-400 transition-colors font-medium">
+                Read More
+              </a>
+            </div>
+          </div>
+        </article>
+        
+        <!-- Blog Post 4 -->
+        <article class="bg-gray-800/50 rounded-2xl overflow-hidden hover:bg-gray-800/70 transition-all duration-300 group" data-aos="fade-up" data-aos-delay="100">
+          <div class="relative">
+            <img src="assets/images/software-development.jpg" alt="Software Development" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+            <div class="absolute top-4 left-4">
+              <span class="px-3 py-1 bg-green-500/20 text-green-400 text-sm rounded-full font-medium">Development</span>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-3 group-hover:text-primary transition-colors">Modern Software Development Practices for Enterprise Applications</h3>
+            <p class="text-gray-400 mb-4 leading-relaxed">Explore the latest methodologies and best practices that are shaping enterprise software development in 2024.</p>
+            
+            <div class="flex items-center justify-between mb-4">
+              <div class="flex items-center gap-3">
+                <img src="assets/images/testimonial-2.jpg" alt="Sarah Okafor" class="w-8 h-8 rounded-full object-cover">
+                <div>
+                  <p class="text-sm font-medium">Sarah Okafor</p>
+                  <p class="text-xs text-gray-400">Senior Developer</p>
+                </div>
+              </div>
+              <p class="text-sm text-gray-400">February 22, 2024</p>
+            </div>
+            
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-4 text-gray-400 text-sm">
+                <span class="flex items-center gap-1">
+                  <i class="ri-time-line"></i>
+                  9 min
+                </span>
+                <span class="flex items-center gap-1">
+                  <i class="ri-eye-line"></i>
+                  1.5K
+                </span>
+              </div>
+              <a href="#" class="text-primary hover:text-blue-400 transition-colors font-medium">
+                Read More
+              </a>
+            </div>
+          </div>
+        </article>
+        
+        <!-- Blog Post 5 -->
+        <article class="bg-gray-800/50 rounded-2xl overflow-hidden hover:bg-gray-800/70 transition-all duration-300 group" data-aos="fade-up" data-aos-delay="200">
+          <div class="relative">
+            <img src="assets/images/consulting.jpg" alt="IT Consulting" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+            <div class="absolute top-4 left-4">
+              <span class="px-3 py-1 bg-orange-500/20 text-orange-400 text-sm rounded-full font-medium">Consulting</span>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-3 group-hover:text-primary transition-colors">How to Choose the Right IT Consulting Partner for Your Business</h3>
+            <p class="text-gray-400 mb-4 leading-relaxed">A comprehensive guide to selecting an IT consulting partner that aligns with your business goals and technical requirements.</p>
+            
+            <div class="flex items-center justify-between mb-4">
+              <div class="flex items-center gap-3">
+                <img src="assets/images/testimonial-3.jpg" alt="David Nwosu" class="w-8 h-8 rounded-full object-cover">
+                <div>
+                  <p class="text-sm font-medium">David Nwosu</p>
+                  <p class="text-xs text-gray-400">Business Consultant</p>
+                </div>
+              </div>
+              <p class="text-sm text-gray-400">January 18, 2024</p>
+            </div>
+            
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-4 text-gray-400 text-sm">
+                <span class="flex items-center gap-1">
+                  <i class="ri-time-line"></i>
+                  7 min
+                </span>
+                <span class="flex items-center gap-1">
+                  <i class="ri-eye-line"></i>
+                  2.1K
+                </span>
+              </div>
+              <a href="#" class="text-primary hover:text-blue-400 transition-colors font-medium">
+                Read More
+              </a>
+            </div>
+          </div>
+        </article>
+        
+        <!-- Blog Post 6 -->
+        <article class="bg-gray-800/50 rounded-2xl overflow-hidden hover:bg-gray-800/70 transition-all duration-300 group" data-aos="fade-up" data-aos-delay="300">
+          <div class="relative">
+            <img src="assets/images/cybersecurity.jpg" alt="Data Analytics" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+            <div class="absolute top-4 left-4">
+              <span class="px-3 py-1 bg-yellow-500/20 text-yellow-400 text-sm rounded-full font-medium">Data Analytics</span>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-3 group-hover:text-primary transition-colors">Leveraging Big Data Analytics for Business Intelligence</h3>
+            <p class="text-gray-400 mb-4 leading-relaxed">Learn how organizations are using big data analytics to gain competitive advantages and drive data-driven decision making.</p>
+            
+            <div class="flex items-center justify-between mb-4">
+              <div class="flex items-center gap-3">
+                <img src="assets/images/testimonial-1.jpg" alt="John Adeyemi" class="w-8 h-8 rounded-full object-cover">
+                <div>
+                  <p class="text-sm font-medium">John Adeyemi</p>
+                  <p class="text-xs text-gray-400">Data Scientist</p>
+                </div>
+              </div>
+              <p class="text-sm text-gray-400">December 15, 2023</p>
+            </div>
+            
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-4 text-gray-400 text-sm">
+                <span class="flex items-center gap-1">
+                  <i class="ri-time-line"></i>
+                  11 min
+                </span>
+                <span class="flex items-center gap-1">
+                  <i class="ri-eye-line"></i>
+                  3.8K
+                </span>
+              </div>
+              <a href="#" class="text-primary hover:text-blue-400 transition-colors font-medium">
+                Read More
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+      
+      <div class="text-center mt-12">
+        <a href="#" class="inline-flex items-center bg-transparent border-2 border-gray-600 hover:border-primary hover:bg-primary/10 text-white py-3 px-8 rounded-button font-medium transition-all duration-300">
+          Load More Articles
+          <i class="ri-arrow-down-line ml-2"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories Section -->
+  <section class="py-20 bg-gray-900/50">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold mb-6" data-aos="fade-up">
+          Explore by Category
+        </h2>
+        <p class="text-xl text-gray-300 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+          Browse our content by technology domain and industry focus areas.
+        </p>
+      </div>
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="bg-gray-800/50 rounded-2xl p-6 text-center hover:bg-gray-800/70 transition-all duration-300 group cursor-pointer" data-aos="fade-up" data-aos-delay="100">
+          <div class="w-16 h-16 bg-primary/20 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/30 transition-colors">
+            <i class="ri-brain-line text-3xl text-primary"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">AI & Machine Learning</h3>
+          <p class="text-gray-300 text-sm mb-4">Latest developments in artificial intelligence and ML applications</p>
+          <span class="text-primary text-sm font-medium">24 Articles</span>
+        </div>
+        
+        <div class="bg-gray-800/50 rounded-2xl p-6 text-center hover:bg-gray-800/70 transition-all duration-300 group cursor-pointer" data-aos="fade-up" data-aos-delay="200">
+          <div class="w-16 h-16 bg-blue-500/20 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:bg-blue-500/30 transition-colors">
+            <i class="ri-cloud-line text-3xl text-blue-400"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Cloud Computing</h3>
+          <p class="text-gray-300 text-sm mb-4">Cloud strategies, migration guides, and best practices</p>
+          <span class="text-blue-400 text-sm font-medium">18 Articles</span>
+        </div>
+        
+        <div class="bg-gray-800/50 rounded-2xl p-6 text-center hover:bg-gray-800/70 transition-all duration-300 group cursor-pointer" data-aos="fade-up" data-aos-delay="300">
+          <div class="w-16 h-16 bg-red-500/20 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:bg-red-500/30 transition-colors">
+            <i class="ri-shield-check-line text-3xl text-red-400"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Cybersecurity</h3>
+          <p class="text-gray-300 text-sm mb-4">Security trends, threat analysis, and protection strategies</p>
+          <span class="text-red-400 text-sm font-medium">21 Articles</span>
+        </div>
+        
+        <div class="bg-gray-800/50 rounded-2xl p-6 text-center hover:bg-gray-800/70 transition-all duration-300 group cursor-pointer" data-aos="fade-up" data-aos-delay="400">
+          <div class="w-16 h-16 bg-purple-500/20 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:bg-purple-500/30 transition-colors">
+            <i class="ri-refresh-line text-3xl text-purple-400"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Digital Transformation</h3>
+          <p class="text-gray-300 text-sm mb-4">Business modernization and digital strategy insights</p>
+          <span class="text-purple-400 text-sm font-medium">15 Articles</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Section -->
+  <section id="newsletter" class="py-20 bg-gradient-to-r from-primary/20 to-blue-600/20">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-4xl font-bold mb-6" data-aos="fade-up">
+          Stay Updated with Our Newsletter
+        </h2>
+        <p class="text-xl text-gray-300 mb-8" data-aos="fade-up" data-aos-delay="100">
+          Get the latest insights, industry trends, and exclusive content delivered straight to your inbox. Join over 10,000 technology professionals who trust our newsletter.
+        </p>
+        
+        <div class="bg-gray-800/50 backdrop-blur-md rounded-2xl p-8 md:p-12" data-aos="fade-up" data-aos-delay="200">
+          <form class="space-y-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <input type="text" placeholder="Your Name" class="w-full bg-gray-700/50 border border-gray-600 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:border-primary focus:outline-none transition-colors">
+              <input type="email" placeholder="Your Email" class="w-full bg-gray-700/50 border border-gray-600 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:border-primary focus:outline-none transition-colors">
+            </div>
+            <div class="flex items-center gap-3">
+              <input type="checkbox" id="newsletter-consent" class="w-4 h-4 text-primary bg-gray-700 border-gray-600 rounded focus:ring-primary">
+              <label for="newsletter-consent" class="text-sm text-gray-300">
+                I agree to receive newsletters and marketing communications. You can unsubscribe at any time.
+              </label>
+            </div>
+            <button type="submit" class="w-full md:w-auto bg-primary hover:bg-blue-600 text-white py-3 px-8 rounded-button font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg">
+              Subscribe to Newsletter
+              <i class="ri-mail-send-line ml-2"></i>
+            </button>
+          </form>
+          
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8 pt-8 border-t border-gray-700">
+            <div class="text-center">
+              <div class="text-2xl font-bold text-primary mb-2">Weekly</div>
+              <div class="text-sm text-gray-300">Newsletter Frequency</div>
+            </div>
+            <div class="text-center">
+              <div class="text-2xl font-bold text-primary mb-2">10K+</div>
+              <div class="text-sm text-gray-300">Subscribers</div>
+            </div>
+            <div class="text-center">
+              <div class="text-2xl font-bold text-primary mb-2">5★</div>
+              <div class="text-sm text-gray-300">Average Rating</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 py-16">
+    <div class="container mx-auto px-4">
+      <div class="grid md:grid-cols-4 gap-8 mb-12">
+        <!-- Company Info -->
+        <div class="md:col-span-2">
+          <img src="assets/images/asi-logo.png" alt="ASI Logo" class="h-12 w-auto mb-6">
+          <p class="text-gray-300 mb-6 max-w-md">
+            Advanced Systems Infrastructure - Your trusted partner for innovative technology solutions that drive business growth and digital transformation.
+          </p>
+          <div class="flex space-x-4">
+            <a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary transition-colors">
+              <i class="ri-linkedin-fill text-white"></i>
+            </a>
+            <a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary transition-colors">
+              <i class="ri-twitter-fill text-white"></i>
+            </a>
+            <a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary transition-colors">
+              <i class="ri-facebook-fill text-white"></i>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Quick Links -->
+        <div>
+          <h3 class="text-lg font-semibold mb-6">Quick Links</h3>
+          <ul class="space-y-3">
+            <li><a href="index.html" class="text-gray-300 hover:text-white transition-colors">Home</a></li>
+            <li><a href="about.html" class="text-gray-300 hover:text-white transition-colors">About</a></li>
+            <li><a href="services.html" class="text-gray-300 hover:text-white transition-colors">Services</a></li>
+            <li><a href="case-studies.html" class="text-gray-300 hover:text-white transition-colors">Case Studies</a></li>
+            <li><a href="contact.html" class="text-gray-300 hover:text-white transition-colors">Contact</a></li>
+          </ul>
+        </div>
+        
+        <!-- Contact Info -->
+        <div>
+          <h3 class="text-lg font-semibold mb-6">Contact Info</h3>
+          <ul class="space-y-3">
+            <li class="flex items-center text-gray-300">
+              <i class="ri-phone-line mr-3"></i>
+              +234 907 867 8189
+            </li>
+            <li class="flex items-center text-gray-300">
+              <i class="ri-mail-line mr-3"></i>
+              info@asi.com.ng
+            </li>
+            <li class="flex items-center text-gray-300">
+              <i class="ri-map-pin-line mr-3"></i>
+              Lagos, Nigeria
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <!-- Footer Bottom -->
+      <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+        <p class="text-gray-400 text-sm mb-4 md:mb-0">
+          © 2024 Advanced Systems Infrastructure. All rights reserved.
+        </p>
+        <div class="flex space-x-6">
+          <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">Privacy Policy</a>
+          <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop" class="fixed bottom-8 right-8 w-12 h-12 bg-primary hover:bg-blue-600 text-white rounded-full flex items-center justify-center transition-all duration-300 opacity-0 invisible hover:scale-110 z-40">
+    <i class="ri-arrow-up-line text-xl"></i>
+  </button>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    // Initialize AOS
+    AOS.init({
+      duration: 800,
+      easing: 'ease-out-cubic',
+      once: true,
+      offset: 100
+    });
+
+    // Back to Top functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      const backToTopButton = document.getElementById('backToTop');
+      
+      window.addEventListener('scroll', function() {
+        if (window.pageYOffset > 300) {
+          backToTopButton.classList.remove('opacity-0', 'invisible');
+        } else {
+          backToTopButton.classList.add('opacity-0', 'invisible');
+        }
+      });
+      
+      backToTopButton.addEventListener('click', function() {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>

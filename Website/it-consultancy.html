@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT Consultancy - ASI | Strategic Technology Solutions</title>
+  <meta name="description" content="Expert IT consultancy services to guide your technology strategy, implementation, and optimization for business growth and innovation.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              50: '#eff6ff',
+              100: '#dbeafe',
+              200: '#bfdbfe',
+              300: '#93c5fd',
+              400: '#60a5fa',
+              500: '#3b82f6',
+              600: '#2563eb',
+              700: '#1d4ed8',
+              800: '#1e40af',
+              900: '#1e3a8a'
+            },
+            gray: {
+              50: '#f9fafb',
+              100: '#f3f4f6',
+              200: '#e5e7eb',
+              300: '#d1d5db',
+              400: '#9ca3af',
+              500: '#6b7280',
+              600: '#4b5563',
+              700: '#374151',
+              800: '#1f2937',
+              900: '#111827',
+              950: '#030712'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif']
+          },
+          animation: {
+            'fade-in': 'fadeIn 0.5s ease-in-out',
+            'slide-up': 'slideUp 0.6s ease-out',
+            'scale-in': 'scaleIn 0.4s ease-out',
+            'bounce-gentle': 'bounceGentle 2s infinite'
+          },
+          keyframes: {
+            fadeIn: {
+              '0%': { opacity: '0' },
+              '100%': { opacity: '1' }
+            },
+            slideUp: {
+              '0%': { transform: 'translateY(30px)', opacity: '0' },
+              '100%': { transform: 'translateY(0)', opacity: '1' }
+            },
+            scaleIn: {
+              '0%': { transform: 'scale(0.8)', opacity: '0' },
+              '100%': { transform: 'scale(1)', opacity: '1' }
+            },
+            bounceGentle: {
+              '0%, 20%, 50%, 80%, 100%': { transform: 'translateY(0)' },
+              '40%': { transform: 'translateY(-10px)' },
+              '60%': { transform: 'translateY(-5px)' }
+            },
+            float: {
+              '0%, 100%': { transform: 'translateY(0px)' },
+              '50%': { transform: 'translateY(-20px)' }
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="font-sans">
+    <!-- Enhanced Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-gray-950/95 backdrop-blur-md border-b border-gray-800/50 transition-all duration-300" id="header">
+        <!-- Top Bar with Contact Info -->
+        <div class="bg-primary-600 text-white py-2 text-sm">
+            <div class="container mx-auto px-4 flex justify-between items-center">
+                <div class="flex items-center space-x-6">
+                    <a href="mailto:info@asi.com.ng" class="flex items-center space-x-2 hover:text-primary-300 transition-colors">
+                        <i class="ri-mail-line"></i>
+                        <span>info@asi.com.ng</span>
+                    </a>
+                    <a href="tel:+2349078678189" class="flex items-center space-x-2 hover:text-primary-300 transition-colors">
+                        <i class="ri-phone-line"></i>
+                        <span>+234 907 867 8189</span>
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="#" class="hover:text-primary-300 transition-colors"><i class="ri-linkedin-fill"></i></a>
+                    <a href="#" class="hover:text-primary-300 transition-colors"><i class="ri-twitter-fill"></i></a>
+                    <a href="#" class="hover:text-primary-300 transition-colors"><i class="ri-facebook-fill"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Main Navigation -->
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <img src="assets/images/asi-logo.png" alt="ASI Logo" class="h-12 w-auto">
+                    <div class="hidden sm:block">
+                        <div class="text-xl font-bold text-white">ASI</div>
+                        <div class="text-xs text-gray-400">Advanced Systems Infrastructure</div>
+                    </div>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <nav class="hidden lg:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-300 hover:text-white transition-colors">Home</a>
+                    <a href="about.html" class="text-gray-300 hover:text-white transition-colors">About</a>
+                    <div class="relative group">
+                        <button class="text-primary-400 border-b-2 border-primary-400 pb-1 flex items-center space-x-1">
+                            <span>Services</span>
+                            <i class="ri-arrow-down-s-line transition-transform group-hover:rotate-180"></i>
+                        </button>
+                        <div class="absolute top-full left-0 mt-2 w-64 bg-gray-900 border border-gray-800 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                            <div class="p-2">
+                                <a href="it-consultancy.html" class="block px-4 py-3 hover:bg-primary-600/10 rounded-md transition-colors text-primary-400 font-medium">IT Consultancy</a>
+                                <a href="cloud-services.html" class="block px-4 py-3 hover:bg-primary-600/10 rounded-md transition-colors text-gray-300 hover:text-white">Cloud Services</a>
+                                <a href="cybersecurity.html" class="block px-4 py-3 hover:bg-primary-600/10 rounded-md transition-colors text-gray-300 hover:text-white">Cybersecurity</a>
+                                <a href="software-development.html" class="block px-4 py-3 hover:bg-primary-600/10 rounded-md transition-colors text-gray-300 hover:text-white">Software Development</a>
+                                <a href="digital-transformation.html" class="block px-4 py-3 hover:bg-primary-600/10 rounded-md transition-colors text-gray-300 hover:text-white">Digital Transformation</a>
+                                <a href="data-analytics.html" class="block px-4 py-3 hover:bg-primary-600/10 rounded-md transition-colors text-gray-300 hover:text-white">Data Analytics</a>
+                                <a href="business-strategy.html" class="block px-4 py-3 hover:bg-primary-600/10 rounded-md transition-colors text-gray-300 hover:text-white">Business Strategy</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="industries-we-serve.html" class="text-gray-300 hover:text-white transition-colors">Industries</a>
+                    <a href="case-studies.html" class="text-gray-300 hover:text-white transition-colors">Case Studies</a>
+                    <a href="news-insights.html" class="text-gray-300 hover:text-white transition-colors">News & Insights</a>
+                    <a href="contact.html" class="text-gray-300 hover:text-white transition-colors">Contact</a>
+                </nav>
+                
+                <!-- Desktop Theme Toggle -->
+                <div class="hidden lg:flex items-center space-x-4">
+                    <button id="themeToggle" class="p-2 rounded-lg hover:bg-gray-800 transition-colors">
+                        <i class="ri-moon-line text-xl text-gray-400 hover:text-white"></i>
+                    </button>
+                    <a href="contact.html" class="bg-primary-600 hover:bg-primary-700 text-white px-6 py-2 rounded-lg font-medium transition-colors">Get Started</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobileMenuToggle" class="lg:hidden p-2 rounded-lg hover:bg-gray-800 transition-colors">
+                    <i class="ri-menu-line text-2xl text-white"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Enhanced Mobile Menu -->
+        <nav id="mobileMenu" class="lg:hidden fixed inset-0 bg-gray-950/95 backdrop-blur-md z-40 transform translate-x-full transition-transform duration-300">
+            <div class="flex flex-col h-full">
+                <div class="flex items-center justify-between p-4 border-b border-gray-800">
+                    <div class="flex items-center space-x-3">
+                        <img src="assets/images/asi-logo.png" alt="ASI Logo" class="h-10 w-auto">
+                        <div>
+                            <div class="text-lg font-bold text-white">ASI</div>
+                            <div class="text-xs text-gray-400">Advanced Systems Infrastructure</div>
+                        </div>
+                    </div>
+                    <button id="mobileMenuClose" class="p-2 rounded-lg hover:bg-gray-800 transition-colors">
+                        <i class="ri-close-line text-2xl text-white"></i>
+                    </button>
+                </div>
+                
+                <ul class="flex-1 px-4 py-6 space-y-2 overflow-y-auto">
+                    <li><a href="index.html" class="block py-3 text-lg font-medium text-gray-300 hover:text-primary-400 transition-colors">Home</a></li>
+                    <li><a href="about.html" class="block py-3 text-lg font-medium text-gray-300 hover:text-primary-400 transition-colors">About</a></li>
+                    <li class="mobile-dropdown">
+                        <button class="mobile-dropdown-toggle w-full flex items-center justify-between py-3 text-lg font-medium text-primary-400 border-l-2 border-primary-400 pl-4">
+                            Services
+                            <i class="ri-arrow-down-s-line transition-transform"></i>
+                        </button>
+                        <div class="mobile-dropdown-content max-h-0 overflow-hidden transition-all duration-300">
+                            <ul class="pl-4 space-y-2 mt-2">
+                                <li><a href="it-consultancy.html" class="block py-2 text-primary-400 font-medium">IT Consultancy</a></li>
+                                <li><a href="cloud-services.html" class="block py-2 text-gray-300 hover:text-primary-400 transition-colors">Cloud Services</a></li>
+                                <li><a href="cybersecurity.html" class="block py-2 text-gray-300 hover:text-primary-400 transition-colors">Cybersecurity</a></li>
+                                <li><a href="software-development.html" class="block py-2 text-gray-300 hover:text-primary-400 transition-colors">Software Development</a></li>
+                                <li><a href="digital-transformation.html" class="block py-2 text-gray-300 hover:text-primary-400 transition-colors">Digital Transformation</a></li>
+                                <li><a href="data-analytics.html" class="block py-2 text-gray-300 hover:text-primary-400 transition-colors">Data Analytics</a></li>
+                                <li><a href="business-strategy.html" class="block py-2 text-gray-300 hover:text-primary-400 transition-colors">Business Strategy</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="industries-we-serve.html" class="block py-3 text-lg font-medium text-gray-300 hover:text-primary-400 transition-colors">Industries</a></li>
+                    <li><a href="case-studies.html" class="block py-3 text-lg font-medium text-gray-300 hover:text-primary-400 transition-colors">Case Studies</a></li>
+                    <li><a href="news-insights.html" class="block py-3 text-lg font-medium text-gray-300 hover:text-primary-400 transition-colors">News & Insights</a></li>
+                    <li><a href="contact.html" class="block py-3 text-lg font-medium text-gray-300 hover:text-primary-400 transition-colors">Contact</a></li>
+                </ul>
+                
+                <!-- Mobile Contact Info -->
+                <div class="p-4 border-t border-gray-800">
+                    <div class="space-y-3 mb-4">
+                        <a href="mailto:info@asi.com.ng" class="flex items-center space-x-3 text-gray-400 hover:text-primary-400 transition-colors">
+                            <i class="ri-mail-line"></i>
+                            <span>info@asi.com.ng</span>
+                        </a>
+                        <a href="tel:+2349078678189" class="flex items-center space-x-3 text-gray-400 hover:text-primary-400 transition-colors">
+                            <i class="ri-phone-line"></i>
+                            <span>+234 907 867 8189</span>
+                        </a>
+                    </div>
+                    <a href="contact.html" class="bg-primary-600 hover:bg-primary-700 text-white w-full text-center py-3 rounded-lg font-medium transition-colors block">
+                        Get Started
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+  <!-- Mobile Menu Overlay -->
+  <div id="mobileMenu" class="fixed inset-0 z-40 lg:hidden hidden">
+    <div class="fixed inset-0 bg-black/50 backdrop-blur-sm" id="mobileMenuBackdrop"></div>
+    <div class="fixed top-0 right-0 h-full w-80 bg-gray-900 shadow-xl transform translate-x-full transition-transform duration-300" id="mobileMenuPanel">
+      <div class="flex items-center justify-between p-6 border-b border-gray-800">
+        <h2 class="text-lg font-semibold text-white">Navigation</h2>
+        <button id="mobileMenuClose" class="p-2 rounded-lg hover:bg-gray-800 transition-colors">
+          <i class="ri-close-line text-gray-400"></i>
+        </button>
+      </div>
+      <nav class="p-6">
+        <ul class="space-y-4">
+          <li><a href="index.html" class="block py-3 px-4 rounded-lg text-gray-300 hover:text-white hover:bg-gray-800 transition-colors">Home</a></li>
+          <li><a href="about.html" class="block py-3 px-4 rounded-lg text-gray-300 hover:text-white hover:bg-gray-800 transition-colors">About</a></li>
+          <li><a href="services.html" class="block py-3 px-4 rounded-lg text-primary-400 bg-primary-900/20 font-medium">Services</a></li>
+          <li><a href="case-studies.html" class="block py-3 px-4 rounded-lg text-gray-300 hover:text-white hover:bg-gray-800 transition-colors">Case Studies</a></li>
+          <li><a href="contact.html" class="block py-3 px-4 rounded-lg text-gray-300 hover:text-white hover:bg-gray-800 transition-colors">Contact</a></li>
+        </ul>
+        <div class="mt-8 pt-6 border-t border-gray-800">
+          <div class="space-y-4">
+            <a href="mailto:info@asi.com.ng" class="flex items-center space-x-3 text-gray-400 hover:text-white transition-colors">
+              <i class="ri-mail-line"></i>
+              <span class="text-sm">info@asi.com.ng</span>
+            </a>
+            <a href="tel:+2349078678189" class="flex items-center space-x-3 text-gray-400 hover:text-white transition-colors">
+              <i class="ri-phone-line"></i>
+              <span class="text-sm">+234 907 867 8189</span>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Desktop Menu Overlay -->
+  <div id="desktopMenu" class="fixed inset-0 z-40 hidden">
+    <div class="fixed inset-0 bg-black/50 backdrop-blur-sm" id="desktopMenuBackdrop"></div>
+    <div class="fixed inset-0 flex items-center justify-center">
+      <div class="bg-gray-900/95 backdrop-blur-md rounded-2xl p-8 max-w-2xl w-full mx-4 border border-gray-800">
+        <div class="flex items-center justify-between mb-8">
+          <h2 class="text-2xl font-bold text-white">Navigation</h2>
+          <button id="desktopMenuClose" class="p-2 rounded-lg hover:bg-gray-800 transition-colors">
+            <i class="ri-close-line text-gray-400 text-xl"></i>
+          </button>
+        </div>
+        <nav>
+          <ul class="grid grid-cols-2 gap-4">
+            <li><a href="index.html" class="block p-4 rounded-xl text-gray-300 hover:text-white hover:bg-gray-800/50 transition-colors text-center font-medium">Home</a></li>
+            <li><a href="about.html" class="block p-4 rounded-xl text-gray-300 hover:text-white hover:bg-gray-800/50 transition-colors text-center font-medium">About</a></li>
+            <li><a href="services.html" class="block p-4 rounded-xl text-primary-400 bg-primary-900/20 transition-colors text-center font-medium">Services</a></li>
+            <li><a href="case-studies.html" class="block p-4 rounded-xl text-gray-300 hover:text-white hover:bg-gray-800/50 transition-colors text-center font-medium">Case Studies</a></li>
+            <li><a href="contact.html" class="block p-4 rounded-xl text-gray-300 hover:text-white hover:bg-gray-800/50 transition-colors text-center font-medium">Contact</a></li>
+            <li><a href="industries-we-serve.html" class="block p-4 rounded-xl text-gray-300 hover:text-white hover:bg-gray-800/50 transition-colors text-center font-medium">Industries</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  <!-- Enhanced Hero Section with Background Image -->
+  <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <!-- Background Image -->
+    <div class="absolute inset-0 z-0">
+      <img src="images/consulting.jpg" alt="IT Consultancy" class="w-full h-full object-cover">
+      <div class="absolute inset-0 bg-gradient-to-r from-gray-950/90 via-gray-950/70 to-gray-950/90"></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-gray-950/80 via-transparent to-gray-950/40"></div>
+    </div>
+    
+    <!-- Animated Background Elements -->
+    <div class="absolute inset-0 overflow-hidden pointer-events-none">
+      <div class="absolute top-1/4 left-1/4 w-64 h-64 bg-primary-500/10 rounded-full blur-3xl animate-float"></div>
+      <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-primary-400/10 rounded-full blur-3xl animate-pulse"></div>
+    </div>
+    
+    <!-- Content -->
+    <div class="container mx-auto px-4 py-32 relative z-10">
+      <div class="max-w-4xl mx-auto text-center">
+        <!-- Breadcrumb -->
+        <nav class="flex justify-center items-center space-x-2 text-sm text-gray-400 mb-8" data-aos="fade-up">
+          <a href="index.html" class="hover:text-primary-400 transition-colors">Home</a>
+          <i class="ri-arrow-right-s-line"></i>
+          <a href="services.html" class="hover:text-primary-400 transition-colors">Services</a>
+          <i class="ri-arrow-right-s-line"></i>
+          <span class="text-primary-400">IT Consultancy</span>
+        </nav>
+        
+        <!-- Main Heading -->
+        <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6" data-aos="fade-up" data-aos-delay="100">
+          <span class="bg-gradient-to-r from-primary-400 via-primary-300 to-primary-400 bg-clip-text text-transparent">
+            IT Consultancy
+          </span>
+        </h1>
+        
+        <!-- Subtitle -->
+        <p class="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed" data-aos="fade-up" data-aos-delay="200">
+          Expert guidance on technology strategy, implementation, and optimization to drive business growth and innovation.
+        </p>
+        
+        <!-- CTA Buttons -->
+        <div class="flex flex-col sm:flex-row gap-4 justify-center items-center" data-aos="fade-up" data-aos-delay="300">
+          <a href="contact.html" class="bg-primary-600 hover:bg-primary-700 text-white text-lg px-8 py-4 rounded-xl font-semibold transition-all duration-300 hover:scale-105 inline-flex items-center">
+            <i class="ri-rocket-line mr-2"></i>
+            Request Consultation
+          </a>
+          <a href="case-studies.html" class="border border-gray-600 hover:border-gray-500 text-gray-300 hover:text-white text-lg px-8 py-4 rounded-xl font-semibold transition-all duration-300 hover:scale-105 inline-flex items-center">
+            <i class="ri-eye-line mr-2"></i>
+            View Case Studies
+          </a>
+        </div>
+        
+        <!-- Stats -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="400">
+          <div class="text-center">
+            <div class="text-3xl font-bold text-primary-400 mb-2">200+</div>
+            <div class="text-sm text-gray-400">Successful Implementations</div>
+          </div>
+          <div class="text-center">
+            <div class="text-3xl font-bold text-primary-300 mb-2">98%</div>
+            <div class="text-sm text-gray-400">Client Satisfaction Rate</div>
+          </div>
+          <div class="text-center">
+            <div class="text-3xl font-bold text-primary-400 mb-2">15+</div>
+            <div class="text-sm text-gray-400">Years of Experience</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Scroll Indicator -->
+    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+      <i class="ri-arrow-down-line text-2xl text-gray-400"></i>
+    </div>
+  </section>
+
+  <!-- Service Overview -->
+  <section id="services" class="py-20 lg:py-32 bg-gray-900/50">
+    <div class="container mx-auto px-4 lg:px-6">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div class="animate-slide-up">
+          <div class="relative">
+            <img src="images/consulting.jpg" alt="IT Consultancy" class="rounded-2xl w-full h-auto shadow-2xl">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-2xl"></div>
+          </div>
+        </div>
+        <div class="animate-slide-up" style="animation-delay: 0.2s">
+          <div class="mb-6">
+            <span class="inline-block px-4 py-2 bg-primary-900/30 text-primary-400 rounded-full text-sm font-medium mb-4">
+              Strategic IT Guidance
+            </span>
+            <h2 class="text-4xl lg:text-5xl font-bold mb-6 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
+              Transform Your Technology Strategy
+            </h2>
+          </div>
+          <div class="space-y-6 text-gray-300">
+            <p class="text-lg leading-relaxed">
+              Our IT consultancy services provide expert guidance to help your organization make informed decisions about technology investments and implementations. We work closely with your team to understand your business objectives and develop tailored technology strategies that drive growth and innovation.
+            </p>
+            <p class="text-lg leading-relaxed">
+              With our deep expertise in various technologies and industries, we help you navigate the complex IT landscape and identify the solutions that best fit your unique needs and challenges.
+            </p>
+          </div>
+          
+          <!-- Key Benefits -->
+          <div class="mt-8 space-y-4">
+            <div class="flex items-start space-x-3 group">
+              <div class="flex-shrink-0 w-6 h-6 bg-primary-600 rounded-full flex items-center justify-center mt-1">
+                <i class="ri-check-line text-white text-sm"></i>
+              </div>
+              <span class="text-gray-300 group-hover:text-white transition-colors">Technology strategy development</span>
+            </div>
+            <div class="flex items-start space-x-3 group">
+              <div class="flex-shrink-0 w-6 h-6 bg-primary-600 rounded-full flex items-center justify-center mt-1">
+                <i class="ri-check-line text-white text-sm"></i>
+              </div>
+              <span class="text-gray-300 group-hover:text-white transition-colors">IT infrastructure assessment and planning</span>
+            </div>
+            <div class="flex items-start space-x-3 group">
+              <div class="flex-shrink-0 w-6 h-6 bg-primary-600 rounded-full flex items-center justify-center mt-1">
+                <i class="ri-check-line text-white text-sm"></i>
+              </div>
+              <span class="text-gray-300 group-hover:text-white transition-colors">Technology vendor selection and management</span>
+            </div>
+            <div class="flex items-start space-x-3 group">
+              <div class="flex-shrink-0 w-6 h-6 bg-primary-600 rounded-full flex items-center justify-center mt-1">
+                <i class="ri-check-line text-white text-sm"></i>
+              </div>
+              <span class="text-gray-300 group-hover:text-white transition-colors">Digital transformation roadmaps</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Consultancy Services -->
+  <section class="py-20 lg:py-32">
+    <div class="container mx-auto px-4 lg:px-6">
+      <div class="text-center mb-16 animate-slide-up">
+        <span class="inline-block px-4 py-2 bg-primary-900/30 text-primary-400 rounded-full text-sm font-medium mb-4">
+          Our Expertise
+        </span>
+        <h2 class="text-4xl lg:text-5xl font-bold mb-6 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
+          Comprehensive IT Consultancy Services
+        </h2>
+        <p class="text-xl text-gray-400 max-w-3xl mx-auto">
+          From strategic planning to implementation, we provide end-to-end consultancy services to optimize your technology investments.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Service 1 -->
+        <div class="group p-8 bg-gray-900/50 rounded-2xl border border-gray-800 hover:border-primary-600/50 transition-all duration-300 hover:transform hover:scale-105 animate-slide-up">
+          <div class="w-16 h-16 bg-gradient-to-br from-primary-600 to-primary-700 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+            <i class="ri-lightbulb-line text-white text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-4 text-white group-hover:text-primary-400 transition-colors">Strategic Planning</h3>
+          <p class="text-gray-400 leading-relaxed">
+            Develop comprehensive technology strategies aligned with your business objectives and long-term goals.
+          </p>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="group p-8 bg-gray-900/50 rounded-2xl border border-gray-800 hover:border-primary-600/50 transition-all duration-300 hover:transform hover:scale-105 animate-slide-up" style="animation-delay: 0.1s">
+          <div class="w-16 h-16 bg-gradient-to-br from-primary-600 to-primary-700 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+            <i class="ri-search-line text-white text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-4 text-white group-hover:text-primary-400 transition-colors">Technology Assessment</h3>
+          <p class="text-gray-400 leading-relaxed">
+            Comprehensive evaluation of your current IT infrastructure, identifying strengths, weaknesses, and opportunities.
+          </p>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="group p-8 bg-gray-900/50 rounded-2xl border border-gray-800 hover:border-primary-600/50 transition-all duration-300 hover:transform hover:scale-105 animate-slide-up" style="animation-delay: 0.2s">
+          <div class="w-16 h-16 bg-gradient-to-br from-primary-600 to-primary-700 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+            <i class="ri-road-map-line text-white text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-4 text-white group-hover:text-primary-400 transition-colors">Implementation Roadmaps</h3>
+          <p class="text-gray-400 leading-relaxed">
+            Detailed project plans and timelines for successful technology implementations and digital transformations.
+          </p>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="group p-8 bg-gray-900/50 rounded-2xl border border-gray-800 hover:border-primary-600/50 transition-all duration-300 hover:transform hover:scale-105 animate-slide-up" style="animation-delay: 0.3s">
+          <div class="w-16 h-16 bg-gradient-to-br from-primary-600 to-primary-700 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+            <i class="ri-team-line text-white text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-4 text-white group-hover:text-primary-400 transition-colors">Vendor Management</h3>
+          <p class="text-gray-400 leading-relaxed">
+            Expert guidance in selecting, negotiating with, and managing technology vendors and service providers.
+          </p>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="group p-8 bg-gray-900/50 rounded-2xl border border-gray-800 hover:border-primary-600/50 transition-all duration-300 hover:transform hover:scale-105 animate-slide-up" style="animation-delay: 0.4s">
+          <div class="w-16 h-16 bg-gradient-to-br from-primary-600 to-primary-700 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+            <i class="ri-shield-check-line text-white text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-4 text-white group-hover:text-primary-400 transition-colors">Risk Management</h3>
+          <p class="text-gray-400 leading-relaxed">
+            Identify and mitigate technology risks while ensuring compliance with industry standards and regulations.
+          </p>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="group p-8 bg-gray-900/50 rounded-2xl border border-gray-800 hover:border-primary-600/50 transition-all duration-300 hover:transform hover:scale-105 animate-slide-up" style="animation-delay: 0.5s">
+          <div class="w-16 h-16 bg-gradient-to-br from-primary-600 to-primary-700 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+            <i class="ri-line-chart-line text-white text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-4 text-white group-hover:text-primary-400 transition-colors">Performance Optimization</h3>
+          <p class="text-gray-400 leading-relaxed">
+            Continuous monitoring and optimization of IT systems to ensure peak performance and cost efficiency.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-20 lg:py-32 bg-gradient-to-r from-primary-900/20 to-primary-800/20">
+    <div class="container mx-auto px-4 lg:px-6 text-center">
+      <div class="max-w-4xl mx-auto animate-slide-up">
+        <h2 class="text-4xl lg:text-5xl font-bold mb-6 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
+          Ready to Transform Your IT Strategy?
+        </h2>
+        <p class="text-xl text-gray-300 mb-12 max-w-2xl mx-auto">
+          Let our experts guide you through your technology journey. Schedule a consultation to discuss your specific needs and challenges.
+        </p>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a href="contact.html" class="group px-8 py-4 bg-gradient-to-r from-primary-600 to-primary-700 hover:from-primary-700 hover:to-primary-800 text-white font-semibold rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:shadow-primary-500/25">
+            <span class="flex items-center space-x-2">
+              <span>Get Started Today</span>
+              <i class="ri-arrow-right-line group-hover:translate-x-1 transition-transform"></i>
+            </span>
+          </a>
+          <a href="tel:+2349078678189" class="group px-8 py-4 border border-gray-600 hover:border-gray-500 text-gray-300 hover:text-white font-semibold rounded-xl transition-all duration-300 hover:bg-gray-800/50">
+            <span class="flex items-center space-x-2">
+              <i class="ri-phone-line"></i>
+              <span>+234 907 867 8189</span>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-950 border-t border-gray-800">
+    <div class="container mx-auto px-4 lg:px-6 py-16">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Company Info -->
+        <div class="lg:col-span-2">
+          <div class="flex items-center space-x-3 mb-6">
+            <img src="assets/images/asi-logo.png" alt="ASI Logo" class="h-12 w-auto">
+            <div>
+              <div class="text-xl font-bold">ASI</div>
+              <div class="text-sm text-gray-400">Advanced Systems Infrastructure</div>
+            </div>
+          </div>
+          <p class="text-gray-300 mb-6 max-w-md leading-relaxed">
+            Advanced Systems Infrastructure(ASI) is your trusted partner for innovative IT solutions. We help businesses transform through technology, ensuring security, efficiency, and sustainable growth.
+          </p>
+          <div class="flex space-x-4">
+            <a href="#" class="w-10 h-10 bg-primary-500/20 rounded-lg flex items-center justify-center hover:bg-primary-500/30 transition-colors">
+              <i class="ri-linkedin-fill text-primary-500"></i>
+            </a>
+            <a href="#" class="w-10 h-10 bg-primary-500/20 rounded-lg flex items-center justify-center hover:bg-primary-500/30 transition-colors">
+              <i class="ri-twitter-fill text-primary-500"></i>
+            </a>
+            <a href="#" class="w-10 h-10 bg-primary-500/20 rounded-lg flex items-center justify-center hover:bg-primary-500/30 transition-colors">
+              <i class="ri-facebook-fill text-primary-500"></i>
+            </a>
+            <a href="#" class="w-10 h-10 bg-primary-500/20 rounded-lg flex items-center justify-center hover:bg-primary-500/30 transition-colors">
+              <i class="ri-instagram-line text-primary-500"></i>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Quick Links -->
+        <div>
+          <h4 class="text-white font-medium mb-4">Quick Links</h4>
+          <ul class="space-y-3 text-sm">
+            <li><a href="index.html" class="text-gray-400 hover:text-primary-500 transition-colors">Home</a></li>
+            <li><a href="about.html" class="text-gray-400 hover:text-primary-500 transition-colors">About Us</a></li>
+            <li><a href="services.html" class="text-gray-400 hover:text-primary-500 transition-colors">Services</a></li>
+            <li><a href="industries-we-serve.html" class="text-gray-400 hover:text-primary-500 transition-colors">Industries</a></li>
+            <li><a href="case-studies.html" class="text-gray-400 hover:text-primary-500 transition-colors">Case Studies</a></li>
+            <li><a href="news-insights.html" class="text-gray-400 hover:text-primary-500 transition-colors">News & Insights</a></li>
+            <li><a href="contact.html" class="text-gray-400 hover:text-primary-500 transition-colors">Contact</a></li>
+          </ul>
+        </div>
+        
+        <!-- Contact Info -->
+        <div>
+          <h4 class="text-white font-medium mb-4">Contact Info</h4>
+          <div class="space-y-3 text-sm">
+            <div class="flex items-start space-x-3">
+              <i class="ri-map-pin-line text-primary-500 mt-1"></i>
+              <span class="text-gray-400">100 Sand-fill Avenue, Bonny Island, Rivers State, Nigeria</span>
+            </div>
+            <div class="flex items-center space-x-3">
+              <i class="ri-phone-line text-primary-500"></i>
+              <a href="tel:+2349078678189" class="text-gray-400 hover:text-primary-500 transition-colors">+234 907 867 8189</a>
+            </div>
+            <div class="flex items-center space-x-3">
+              <i class="ri-mail-line text-primary-500"></i>
+              <a href="mailto:info@asi.com.ng" class="text-gray-400 hover:text-primary-500 transition-colors">info@asi.com.ng</a>
+            </div>
+          </div>
+          
+          <div class="mt-6">
+            <h5 class="text-white font-medium mb-3">Certifications</h5>
+            <div class="space-y-2 text-xs text-gray-400">
+              <div class="flex items-center space-x-2">
+                <i class="ri-verified-badge-line text-primary-500"></i>
+                <span>ISO 27001 Certified</span>
+              </div>
+              <div class="flex items-center space-x-2">
+                <i class="ri-verified-badge-line text-primary-500"></i>
+                <span>Microsoft Partner</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Footer Bottom -->
+      <div class="border-t border-gray-800 mt-12 pt-8">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+          <p class="text-gray-500 text-center md:text-left">© 2024 Advanced Systems Infrastructure. All rights reserved.</p>
+          <div class="flex items-center gap-6 text-sm text-gray-500">
+            <a href="#" class="hover:text-primary-500 transition-colors">Privacy Policy</a>
+            <a href="#" class="hover:text-primary-500 transition-colors">Terms of Service</a>
+            <a href="#" class="hover:text-primary-500 transition-colors">Cookie Policy</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop" class="fixed bottom-8 right-8 w-12 h-12 bg-primary-600 hover:bg-primary-500/90 text-white rounded-full flex items-center justify-center shadow-lg transition-all duration-300 opacity-0 invisible z-50" data-aos="fade-up">
+    <i class="ri-arrow-up-line text-xl"></i>
+  </button>
+
+  <!-- Scripts -->
+  <script src="js/theme.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    // Initialize AOS
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-in-out',
+      once: true,
+      offset: 100
+    });
+
+    // Back to Top functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      const backToTopButton = document.getElementById('backToTop');
+      
+      window.addEventListener('scroll', function() {
+        if (window.pageYOffset > 300) {
+          backToTopButton.classList.remove('opacity-0', 'invisible');
+        } else {
+          backToTopButton.classList.add('opacity-0', 'invisible');
+        }
+      });
+      
+      backToTopButton.addEventListener('click', function() {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
